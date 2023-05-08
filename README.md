@@ -1,1 +1,2 @@
 # WIT
+Kompetisi Kartini hehehe
