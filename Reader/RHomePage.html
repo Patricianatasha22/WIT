@@ -1,52 +1,108 @@
 <!doctype html>
 <html data-theme="lofi">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="font-family: font-sans ;">
-  <div class="navbar bg-base-100">
-    <div class="flex-none">
-      <button class="btn btn-square btn-ghost" style="width: 100px ;">
-        <img src="Progate Logo Coloured.png" style="width:100px ;"></img>
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> -->
-      </button>
-    </div>
-    <div class="flex-1">
-      <a class="btn btn-ghost normal-case text-xl">Articles</a>
-      <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
-      <a class="btn btn-ghost normal-case text-xl">Community Forum</a>
-    </div>
-    <h3>Patricia</h3>
-    <h3>Level 20</h3>
-    <div class="dropdown dropdown-end">
-      <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+<!-- <body class = "font-sans ..."> -->
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+  <div class="border-b-2 border-b-500 border-[#E3EEFF]">
+    <div class="navbar bg-base-100" style="background-color:#F9FBFE ;">
+      <div class="flex-none">
+        <button class="btn btn-square btn-ghost" style="width: 100px ;">
+          <img src="Progate Logo Coloured.png" style="width:100px ;"></img>
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> -->
+        </button>
+      </div>
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl">Articles</a>
+        <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
+        <a class="btn btn-ghost normal-case text-xl">Community Forum</a>
+      </div>
+      <table style="text-align: right; padding-right: 12px;">
+        <tr>
+          <td>
+            Patricia
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Level 20
+          </td>
+        </tr>
+      </table>
+      <div class="dropdown dropdown-end">
+        <!-- <label tabindex="0" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
           <img src="Profile Pic.png" />
         </div>
-      </label>
-      <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-        <li>
-          <a class="justify-between">
-            Dashboard
-          </a>
-        </li>
-        <li><a>Collections</a></li>
-        <li><a>Settings</a></li>
-        <li><a>Help</a></li>
-        <li><a>Logout</a></li>
-      </ul>
-    </div>
-    <div class="flex-none">
-      
-      <button class="btn btn-square btn-ghost">
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg> -->
-        <img src="Bell.png" style="width: 20px;"></img>
-      </button>
+      </label> -->
+        <div class="avatar placeholder">
+          <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+            <span class="text-3xl">P</span>
+          </div>
+        </div>
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+          <li>
+            <a class="justify-between">
+              Dashboard
+            </a>
+          </li>
+          <li><a>Collections</a></li>
+          <li><a>Settings</a></li>
+          <li><a>Help</a></li>
+          <li><a>Logout</a></li>
+        </ul>
+      </div>
+      <div class="flex-none">
+
+        <button class="btn btn-square btn-ghost">
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg> -->
+          <img src="Bell.png" style="width: 20px;"></img>
+        </button>
+      </div>
     </div>
   </div>
+  </hr>
+
+  <!-- <div class="md:container md:mx-auto border">
+  <div class="container mx-auto mt-6" style="background-color: #FFFFFF;">
+    <input type="text" placeholder="Search article" class="input input-bordered w-full rounded-full"/>
+  </div>
+</div> -->
+
+  <div class="md:container md:mx-auto mt-3">
+    <div class="container mx-auto mt-6 flex items-center" style="background-color: #FFFFFF;">
+      <input type="text" placeholder="Search article" class="input input-bordered w-full rounded-full">
+      <div class="ml-2">
+        <a href="#"><img src="Filter.svg"> </a>
+      </div>
+    </div>
+
+    <div class="flex">
+    <div class="flex-1"> 
+            <div class="relative">
+            <img src="ArticlePic.jpg" alt="ArticlePic" class="w-full">
+            <div class="absolute inset-0 bg-black bg-opacity-50 flex items-bottom">
+              <div class = "ml-5" style="position: absolute; bottom: 0; left: 0; right: 0; margin-bottom: 20px;">
+                <h2 class="text-white font-bold text-2xl">Membuat website itu mudah</h2>
+                <p>Subtitle Text Here</p>
+              </div>
+                <!-- <h2 class="text-white font-bold text-2xl">Membuat website itu mudah</h2> -->
+              
+              
+            </div>
+          </div> 
+      </div>
+      <div class="flex-1">04</div>
+    </div>
+  </div>
+
 </body>
+
 </html>
