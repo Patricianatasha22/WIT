@@ -1,0 +1,107 @@
+<!doctype html>
+<html data-theme="lofi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body style="font-family: font-sans ;">
+    <!-- NAVBAR -->
+
+
+
+
+    <!-- CONTENTS -->
+    <div class="container mx-auto border">
+        <!-- TITLE -->
+        <div class="container mt-12 mb-5 flex justify-center">
+            <p class="capitalize font-semibold text-2xl">Comunity Forum</p>
+        </div>
+
+        <!-- SEARCH BAR & EDIT BUTTON -->
+        <div class="form-control">
+            <div class="container inline-flex items-center">
+                <!-- SEARCH BAR -->
+                <div class="ml-2 w-full ">
+                    <input type="text" placeholder="What's on your mind, Patricia?" class="input input-ghost input-sm w-full rounded-full " />
+                </div>
+                
+                <!-- EDIT BUTTON -->
+                <div class="px-2">
+                    <button class="rounded-full p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- FILTER -->
+            <div class="container flex justify-end">
+                <div class="dropdown dropdown-end dropdown-hover">
+                    <label tabindex="0" class="btn btn-sm m-1 bg-transparent
+                    hover:bg-gray-100 border-0">
+                    <p class="capitalize text-black">Filter <span class="lowercase">by</span> level</p></label>
+                    <ul tabindex="0" class="dropdown-content menu menu-sm p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Beginner</a></li>
+                        <li><a>Intermediate</a></li>
+                        <li><a>Advance</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+
+            <!-- COMMENT LISTS -->
+            <div >
+
+                <!-- SENDER INFO -->
+                <div>
+                    <div class="">
+
+                    </div>
+
+                    <div class="inline-flex items-center">
+                        <p class="text-sm">Wynee</p>
+                        <p class="text-sm text-gray-400 pl-2"><em> 20 days ago</em></p>
+                    </div>
+                </div>
+
+                <!-- COMMENT -->
+                <div>
+                    <p> Today I learn a lot about frontend framework!! </p>
+                </div>
+
+                <!-- TOPICS -->
+                <div class="container">
+                    <div class="inline-flex flex-wrap">
+                        <div class="text-info text-sm hover:opacity-80 p-1">
+                            <p>#frontend</p>
+                        </div>
+                        <div class="text-info text-sm hover:opacity-80 p-1">
+                            <p>#framework</p>
+                        </div>
+                        <div class="text-info text-sm hover:opacity-80 p-1">
+                            <p>#html</p>
+                        </div>
+                        <div class="text-info text-sm hover:opacity-80 p-1">
+                            <p>#css</p>
+                        </div>
+                        <div class="text-info text-sm hover:opacity-80 p-1">
+                            <p>#js</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+</body>
+
+</html>
