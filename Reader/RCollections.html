@@ -12,20 +12,20 @@
 </head>
 
 <body style="font-family: Arial, Helvetica, sans-serif;">
-<!-- Navigation Bar -->
-<div class="border-b-2 border-b-500 border-[#E3EEFF]">
+   <!-- Navigation Bar -->
+   <div class="border-b-2 border-b-500 border-[#E3EEFF]">
     <div class="navbar bg-base-100">
       <div class="flex-none">
-        <a href ="RHomePage.html">
+        <a href ="../index.html">
         <button class="btn btn-square btn-ghost" style="width: 100px ;">
           <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
         </button>
         </a>
       </div>
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Articles</a>
-        <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
-        <a class="btn btn-ghost normal-case text-xl" href = "RCommunityForumPage.html">Community Forum</a>
+        <a class="btn btn-ghost normal-case text-xl" href = "./RViewArticles.html">Articles</a>
+        <a class="btn btn-ghost normal-case text-xl" href= "./RRLeaderboard.html">Leaderboard</a>
+        <a class="btn btn-ghost normal-case text-xl" href = "./RCommunityForumPage.html">Community Forum</a>
       </div>
       <table style="text-align: right; padding-right: 12px;">
         <tr>
@@ -49,33 +49,39 @@
         </label>
         
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
-          <li style="text-align: center ;">
-            <table class = "table-fixed">
-              <tr>
-                
-                <td class = "bg-[#2B546A]">
-                  <a href="RHomePage.html">
-                    <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
-                      Reader
-                    </div>
-                  </a>
-                </td>
+          <li style="text-align: center ;" class = "bg-[#F1F7FF]">
+            <label class="swap bg-[#E3EEFF]">
+              <input type="checkbox" style="display: none;"/>
               
-                <td class = "bg-[#E3EEFF]">
-                  <a href="../Writer/WHomePage.html">
-                  <div class="text-[#2B546A] inline-block rounded-box px-3">
-                    Writer 
+              <div class="swap-off">
+                <a href = "RHomePage.html">
+                  <div class="pr-2 flex inline-flex items-center">
+                    <svg class="fill-current mr-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                    </svg>
+                    Reader
                   </div>
                 </a>
-                </td>
-              </a>
-              </tr>
-            </table>
+              </div>
+              
+              
+              <div class="swap-on">
+                <a href = "../Writer/WHomePage.html">
+                  <div class="pr-2 flex inline-flex items-center">
+                    <svg class="fill-current mr-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    Writer
+                  </div>
+                  </a>
+              </div>
+            
+          </label>
           </li>
-          <li><a>Dashboard</a></li>
-          <li><a>Collections</a></li>
-          <li><a>Settings</a></li>
-          <li><a>Help</a></li>
+          <li><a href="./RDashboard.html">Dashboard</a></li>
+          <li><a href="./RCollections.html">Collections</a></li>
+          <li><a href = "./RSettings.html">Settings</a></li>
+          <li><a href="https://progate.com/faqs">Help</a></li>
           <li><a href = "https://progate.com/signin">Logout</a></li>
         </ul>
       </div>
@@ -86,11 +92,158 @@
         </button>
       </div>
     </div>
+
   </div>
+
+  <!-- Navigation Bar -->
 
   <!-- Content -->
 <div class="md:container md:mx-auto mt-3 px-20">
-       
+       <input type="text" placeholder="Search collection..."
+        class=" mt-4 mb-8 input input-bordered w-full rounded-full border-2 border-[#E3EEFF]" style="background-color: #F1F7FF;">
+      <p class="text-xl font-bold mb-2">Collections</p>
+        <div class="grid grid-cols-6 mb-10">
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] bgImage rounded-md px-6 py-2 mr-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">CSS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left  text-[#2B546A] lowercase">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] rounded-md px-6 py-2 mr-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left  text-[#2B546A]">HTML</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] rounded-md py-2 flex border justify-between" style="width:190px" >
+                <div class="">
+                <img src="./assets/bird.svg" style="justify-content: flex-start;"></img>
+                </div>
+                <div class="mr-8">
+                    <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+                    <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+                </div>
+        </button>
+      </div>
+
+      <!-- Collection 2 -->
+      <div class="grid grid-cols-6 mb-10">
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] bgImage rounded-md px-6 py-2 mr-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">CSS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left  text-[#2B546A] lowercase">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] rounded-md px-6 py-2 mr-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left  text-[#2B546A]">HTML</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] rounded-md py-2 flex border justify-between" style="width:190px" >
+                <div class="">
+                <img src="./assets/bird.svg" style="justify-content: flex-start;"></img>
+                </div>
+                <div class="mr-8">
+                    <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+                    <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+                </div>
+        </button>
+      </div>
+
+      <!-- Collection 3 -->
+      <div class="grid grid-cols-6">
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] bgImage rounded-md px-6 py-2 mr-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">CSS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left  text-[#2B546A] lowercase">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] rounded-md px-6 py-2 mr-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left  text-[#2B546A]">HTML</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] rounded-md py-2 flex border justify-between" style="width:190px" >
+                <div class="">
+                <img src="./assets/bird.svg" style="justify-content: flex-start;"></img>
+                </div>
+                <div class="mr-8">
+                    <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+                    <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+                </div>
+        </button>
+      </div>
 </div>
 </body>
 
