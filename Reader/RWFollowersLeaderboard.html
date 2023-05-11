@@ -11,7 +11,7 @@
 
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif;">
+<body style="font-family: Arial, Helvetica, sans-serif; color:#2B546A">
    <!-- Navigation Bar -->
    <div class="border-b-2 border-b-500 border-[#E3EEFF]">
     <div class="navbar bg-base-100">
@@ -99,21 +99,31 @@
 
   <!-- Content -->
 <div class="md:container md:mx-auto mt-3 px-20">
-        <div class="tabs flex mt-6">
-            <a class="tab tab-bordered flex-1">Reader</a> 
-            <a class="tab tab-bordered flex-1 tab-active">Writer</a> 
-        </div>
+      <div class="tabs flex mt-6">
+          <a class="tab tab-bordered flex-1" href="RRLeaderboard.html">Reader</a> 
+          <a class="tab tab-bordered flex-1 tab-active" href="RWArticlesLeaderboard.html">Writer</a> 
+      </div>
 
     <div class="flex justify-center">
     <p class="text-xl font-bold mt-5 mb-1">Top</p>
-        <div class="dropdown dropdown-right dropdown-end">
-             <select class=" mt-4 ml-2 select select-sm max-w-xs rounded-full bg-[#E3EEFF] hover:bg-gray-100"
-                  id="darkTextColor">
-                  <option selected>Followers</option>
-                  <a href="RWLikesLeaderboard.html"><option>Likes</option></a>
-                  <option>Articles</option>
-              </select>
-        </div>
+      <div class="dropdown dropdown-end mt-2">
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full">
+                <div class="w-7 h-7 flex border justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                    </svg>
+                  </div>
+              </div>
+        </label>
+
+        <ul tabindex="0"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+            <li><a href = "RWLikesLeaderboard.html">Likes</a></li>
+            <li><a href = "RWFollowersLeaderboard.html">Followers</a></li>
+            <li><a href="RWArticlesLeaderboard.html">Articles</a></li>
+        </ul>
+    </div>
     </div>
 
 <div class="overflow-x-auto w-full">
@@ -126,7 +136,7 @@
             Rank
           </label>
         </th>
-        <th>Reader name</th>
+        <th>Name</th>
         <th>Country</th>
         <th>Followers</th>
       </tr>

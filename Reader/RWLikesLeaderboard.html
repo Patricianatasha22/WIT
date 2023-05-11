@@ -11,21 +11,21 @@
 
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif;">
-<!-- Navigation Bar -->
-<div class="border-b-2 border-b-500 border-[#E3EEFF]">
+<body style="font-family: Arial, Helvetica, sans-serif;color:#2B546A ">
+   <!-- Navigation Bar -->
+   <div class="border-b-2 border-b-500 border-[#E3EEFF]">
     <div class="navbar bg-base-100">
       <div class="flex-none">
-        <a href ="RHomePage.html">
+        <a href ="../index.html">
         <button class="btn btn-square btn-ghost" style="width: 100px ;">
           <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
         </button>
         </a>
       </div>
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Articles</a>
-        <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
-        <a class="btn btn-ghost normal-case text-xl" href = "RCommunityForumPage.html">Community Forum</a>
+        <a class="btn btn-ghost normal-case text-xl" href = "./RViewArticles.html">Articles</a>
+        <a class="btn btn-ghost normal-case text-xl" href= "./RRLeaderboard.html">Leaderboard</a>
+        <a class="btn btn-ghost normal-case text-xl" href = "./RCommunityForumPage.html">Community Forum</a>
       </div>
       <table style="text-align: right; padding-right: 12px;">
         <tr>
@@ -49,33 +49,39 @@
         </label>
         
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
-          <li style="text-align: center ;">
-            <table class = "table-fixed">
-              <tr>
-                
-                <td class = "bg-[#2B546A]">
-                  <a href="RHomePage.html">
-                    <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
-                      Reader
-                    </div>
-                  </a>
-                </td>
+          <li style="text-align: center ;" class = "bg-[#F1F7FF]">
+            <label class="swap bg-[#E3EEFF]">
+              <input type="checkbox" style="display: none;"/>
               
-                <td class = "bg-[#E3EEFF]">
-                  <a href="../Writer/WHomePage.html">
-                  <div class="text-[#2B546A] inline-block rounded-box px-3">
-                    Writer 
+              <div class="swap-off">
+                <a href = "RHomePage.html">
+                  <div class="pr-2 flex inline-flex items-center">
+                    <svg class="fill-current mr-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                    </svg>
+                    Reader
                   </div>
                 </a>
-                </td>
-              </a>
-              </tr>
-            </table>
+              </div>
+              
+              
+              <div class="swap-on">
+                <a href = "../Writer/WHomePage.html">
+                  <div class="pr-2 flex inline-flex items-center">
+                    <svg class="fill-current mr-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                    </svg>
+                    Writer
+                  </div>
+                  </a>
+              </div>
+            
+          </label>
           </li>
-          <li><a>Dashboard</a></li>
-          <li><a>Collections</a></li>
-          <li><a>Settings</a></li>
-          <li><a>Help</a></li>
+          <li><a href="./RDashboard.html">Dashboard</a></li>
+          <li><a href="./RCollections.html">Collections</a></li>
+          <li><a href = "./RSettings.html">Settings</a></li>
+          <li><a href="https://progate.com/faqs">Help</a></li>
           <li><a href = "https://progate.com/signin">Logout</a></li>
         </ul>
       </div>
@@ -86,25 +92,38 @@
         </button>
       </div>
     </div>
+
   </div>
+
+  <!-- Navigation Bar -->
 
   <!-- Content -->
 <div class="md:container md:mx-auto mt-3 px-20">
-        <div class="tabs flex mt-6">
-            <a class="tab tab-bordered flex-1">Reader</a> 
-            <a class="tab tab-bordered flex-1 tab-active">Writer</a> 
-        </div>
+    <div class="tabs flex mt-6">
+      <a class="tab tab-bordered flex-1" href="RRLeaderboard.html">Reader</a> 
+      <a class="tab tab-bordered flex-1 tab-active" href="RWArticlesLeaderboard.html">Writer</a> 
+    </div>
 
     <div class="flex justify-center">
     <p class="text-xl font-bold mt-5 mb-1">Top</p>
-        <div class="dropdown dropdown-right dropdown-end">
-             <select class=" mt-4 ml-2 select select-sm max-w-xs rounded-full bg-[#E3EEFF] hover:bg-gray-100"
-                  id="darkTextColor">
-                  <option>Followers</option>
-                  <option selected>Likes</option>
-                  <option>Articles</option>
-              </select>
-        </div>
+      <div class="dropdown dropdown-end mt-2">
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full">
+                <div class="w-7 h-7 flex border justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75" />
+                    </svg>
+                  </div>
+              </div>
+        </label>
+
+        <ul tabindex="0"
+            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+            <li><a href = "RWLikesLeaderboard.html">Likes</a></li>
+            <li><a href = "RWFollowersLeaderboard.html">Followers</a></li>
+            <li><a href="RWArticlesLeaderboard.html">Articles</a></li>
+        </ul>
+    </div>
     </div>
 
 <div class="overflow-x-auto w-full">
@@ -117,7 +136,7 @@
             Rank
           </label>
         </th>
-        <th>Reader name</th>
+        <th>Name</th>
         <th>Country</th>
         <th>Likes</th>
       </tr>
