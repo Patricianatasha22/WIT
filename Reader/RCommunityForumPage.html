@@ -9,91 +9,92 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body style="font-family: Arial, Helvetica, sans-serif;">
- <!-- Navigation Bar -->
- <div class="border-b-2 border-b-500 border-[#E3EEFF]">
-    <div class="navbar bg-base-100">
-      <div class="flex-none">
-        <a href ="RHomePage.html">
-        <button class="btn btn-square btn-ghost" style="width: 100px ;">
-          <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
-        </button>
-        </a>
-      </div>
-      <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Articles</a>
-        <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
-        <a class="btn btn-ghost normal-case text-xl" href = "RCommunityForumPage.html">Community Forum</a>
-      </div>
-      <table style="text-align: right; padding-right: 12px;">
-        <tr>
-          <td>
-            Patricia
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Level 20
-          </td>
-        </tr>
-      </table>
-      <div class="dropdown dropdown-end">
-        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-          <div class="avatar placeholder">
-            <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
-              <span class="text-2xl">P</span>
-            </div>
-          </div>
-        </label>
-        
-        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
-          <li style="text-align: center ;">
-            <table class = "table-fixed">
-              <tr>
-                
-                <td class = "bg-[#2B546A]">
-                  <a href="RHomePage.html">
-                    <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
-                      Reader
-                    </div>
-                  </a>
-                </td>
-              
-                <td class = "bg-[#E3EEFF]">
-                  <a href="../Writer/WHomePage.html">
-                  <div class="text-[#2B546A] inline-block rounded-box px-3">
-                    Writer 
-                  </div>
+<body class="text-[#2B546A]" style="font-family: Arial, Helvetica, sans-serif;">
+    <!-- Navigation Bar -->
+    <div class="border-b-2 border-b-500 border-[#E3EEFF] text-[#2B546A]">
+        <div class="navbar bg-base-100">
+            <div class="flex-none">
+                <a href="RHomePage.html">
+                    <button class="btn btn-square btn-ghost" style="width: 100px ;">
+                        <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
+                    </button>
                 </a>
-                </td>
-              </a>
-              </tr>
+            </div>
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">Articles</a>
+                <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
+                <a class="btn btn-ghost normal-case text-xl" href="RCommunityForumPage.html">Community Forum</a>
+            </div>
+            <table style="text-align: right; padding-right: 12px;">
+                <tr>
+                    <td>
+                        Patricia
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Level 20
+                    </td>
+                </tr>
             </table>
-          </li>
-          <li><a>Dashboard</a></li>
-          <li><a>Collections</a></li>
-          <li><a>Settings</a></li>
-          <li><a>Help</a></li>
-          <li><a href = "https://progate.com/signin">Logout</a></li>
-        </ul>
-      </div>
-      <div class="flex-none">
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="avatar placeholder">
+                        <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+                            <span class="text-2xl">P</span>
+                        </div>
+                    </div>
+                </label>
 
-        <button class="btn btn-square btn-ghost">
-          <img src="./assets/Bell.png" style="width: 20px;"></img>
-        </button>
-      </div>
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+                    <li style="text-align: center ;">
+                        <table class="table-fixed">
+                            <tr>
+
+                                <td class="bg-[#2B546A]">
+                                    <a href="RHomePage.html">
+                                        <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
+                                            Reader
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td class="bg-[#E3EEFF]">
+                                    <a href="../Writer/WHomePage.html">
+                                        <div class="text-[#2B546A] inline-block rounded-box px-3">
+                                            Writer
+                                        </div>
+                                    </a>
+                                </td>
+                                </a>
+                            </tr>
+                        </table>
+                    </li>
+                    <li><a>Dashboard</a></li>
+                    <li><a>Collections</a></li>
+                    <li><a>Settings</a></li>
+                    <li><a>Help</a></li>
+                    <li><a href="https://progate.com/signin">Logout</a></li>
+                </ul>
+            </div>
+            <div class="flex-none">
+
+                <button class="btn btn-square btn-ghost">
+                    <img src="./assets/Bell.png" style="width: 20px;"></img>
+                </button>
+            </div>
+        </div>
+
     </div>
 
-  </div>
-
-  <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
 
 
 
 
     <!-- CONTENTS -->
-    <div class="container mx-auto text-[#2B546A] pb-24">
+    <div class="container mx-auto pb-24">
         <!-- TITLE -->
         <div class="container mt-12 mb-5 flex justify-center">
             <p class="capitalize font-semibold text-2xl">Community Forum</p>
@@ -451,7 +452,7 @@
 
             </div>
         </div>
-        </div>
+    </div>
 </body>
 
 </html>
