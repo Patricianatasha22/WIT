@@ -6,23 +6,144 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bgImage {
+      border-radius: 10px;
+      /* opacity: 75%; */
+      filter: blur(1px);
+      box-shadow: 10px 5px 8px #888888;
+      width: 100%;
+      height: 100%;
+      /* object-fit: cover; */
+    }
+
+    .bgImages {
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      /* object-fit: cover; */
+    }
+
+
+
+    #articleTitle {
+      color: #F9FBFE
+    }
+
+    #articleCategory {
+      color: #d1dbe9
+    }
+
+    #articleSubtitle {
+      color: #E3EEFF
+    }
+
+    #darkTextColor {
+      color: #2B546A
+    }
+
+    #beginnerCategory {
+      color: #F19100
+    }
+
+    #intermediateCategory {
+      color: #A3A0DA
+    }
+
+    #advancedCategory {
+      color: #FE7F8C
+    }
+
+
+
+
+    .carousel-container {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-slide {
+      display: flex;
+      width: 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .slide-image {
+      /* flex-basis: 33.33%; */
+      width: 100%;
+      height: 220px;
+      padding: 0 10px;
+      position: relative;
+    }
+
+    .slide-image img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .image-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .image-text h2 {
+      margin-left: 20px;
+      margin-bottom: 5px;
+    }
+
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .prev-button,
+    .next-button {
+      background-color: #fff;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .prev-button:hover,
+    .next-button:hover {
+      background-color: #eee;
+    }
+  </style>
+
 </head>
 <!-- <body class = "font-sans ..."> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
 
 <body style="font-family: Arial, Helvetica, sans-serif;">
+  <!-- Navigation Bar -->
   <div class="border-b-2 border-b-500 border-[#E3EEFF]">
-    <div class="navbar bg-base-100" style="background-color:#F9FBFE ;">
+    <div class="navbar bg-base-100">
       <div class="flex-none">
+        <a href ="RHomePage.html">
         <button class="btn btn-square btn-ghost" style="width: 100px ;">
-          <img src="Progate Logo Coloured.png" style="width:100px ;"></img>
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg> -->
+          <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
         </button>
+        </a>
       </div>
       <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl">Articles</a>
         <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
-        <a class="btn btn-ghost normal-case text-xl">Community Forum</a>
+        <a class="btn btn-ghost normal-case text-xl" href = "RCommunityForumPage.html">Community Forum</a>
       </div>
       <table style="text-align: right; padding-right: 12px;">
         <tr>
@@ -37,22 +158,39 @@
         </tr>
       </table>
       <div class="dropdown dropdown-end">
-        <!-- <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-        <div class="w-10 rounded-full">
-          <img src="Profile Pic.png" />
-        </div>
-      </label> -->
-        <div class="avatar placeholder">
-          <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
-            <span class="text-3xl">P</span>
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="avatar placeholder">
+            <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+              <span class="text-2xl">P</span>
+            </div>
           </div>
-        </div>
-        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-          <li>
-            <a class="justify-between">
-              Dashboard
-            </a>
+        </label>
+        
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+          <li style="text-align: center ;">
+            <table class = "table-fixed">
+              <tr>
+                
+                <td class = "bg-[#2B546A]">
+                  <a href="RHomePage.html">
+                    <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
+                      Reader
+                    </div>
+                  </a>
+                </td>
+              
+                <td class = "bg-[#E3EEFF]">
+                  <a href="#">
+                  <div class="text-[#2B546A] inline-block rounded-box px-3">
+                    Writer 
+                  </div>
+                </a>
+                </td>
+              </a>
+              </tr>
+            </table>
           </li>
+          <li><a>Dashboard</a></li>
           <li><a>Collections</a></li>
           <li><a>Settings</a></li>
           <li><a>Help</a></li>
@@ -62,44 +200,368 @@
       <div class="flex-none">
 
         <button class="btn btn-square btn-ghost">
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg> -->
-          <img src="Bell.png" style="width: 20px;"></img>
+          <img src="./assets/Bell.png" style="width: 20px;"></img>
         </button>
       </div>
     </div>
-  </div>
-  </hr>
 
-  <!-- <div class="md:container md:mx-auto border">
-  <div class="container mx-auto mt-6" style="background-color: #FFFFFF;">
-    <input type="text" placeholder="Search article" class="input input-bordered w-full rounded-full"/>
   </div>
-</div> -->
+
+  <!-- Navigation Bar -->
 
   <div class="md:container md:mx-auto mt-3">
     <div class="container mx-auto mt-6 flex items-center" style="background-color: #FFFFFF;">
-      <input type="text" placeholder="Search article" class="input input-bordered w-full rounded-full">
+      <input type="text" placeholder="Search article..."
+        class="input input-bordered w-full rounded-full border-2 border-[#E3EEFF]" style="background-color: #F1F7FF;">
       <div class="ml-2">
-        <a href="#"><img src="Filter.svg"> </a>
+        <!-- <button class="btn btn-square btn-ghost">
+          <img src="assets/Filter.svg" style="width: 20px;"></img>
+        </button> -->
+        <div class="dropdown dropdown-end">
+          <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+            <div class="w-6 rounded-full">
+              <img src="./assets/Filter.svg" />
+            </div>
+          </label>
+          
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+            <li><a>Category</a></li>
+            <li><a>Level</a></li>
+          </ul>
+        </div>
       </div>
     </div>
 
     <div class="flex mt-5">
       <div class="flex-1">
-        <div class="relative">
-          <img src="ArticlePic.jpg" alt="ArticlePic" class="w-full"
-            style="border-radius: 10px; opacity: 90%; box-shadow: 10px 5px 8px #888888 ;">
-          <!-- <div class="absolute inset-0 bg-black bg-opacity-50 flex items-bottom"> -->
-          <div class="absolute inset-0 flex items-bottom">
-            <div class="ml-5" style="position: absolute; bottom: 0; left: 0; right: 0; margin-bottom: 20px;">
-              <h2 class="text-white font-bold text-2xl">Membuat website itu mudah</h2>
-              <h2 class="text-white text-l">Di artikel ini, anda akan belajar tentang HTML...</h2>
+
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-80 overflow-hidden rounded-lg md:h-80">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <a href="RArticle.html"><img src="assets/Article1.png" class="bgImage">
+                <div class="absolute inset-0 flex items-bottom">
+                  <div class="ml-5" style="position: absolute; bottom: 0; left: 0; right: 0; margin-bottom: 40px;">
+                    <h2 class="font-bold text-2xl" id="articleTitle">Membuat website itu mudah</h2>
+                    <h2 id="articleSubtitle" class="text-xs">patricianat</h2>
+                    <h2 class="text-l" id="articleSubtitle">Di artikel ini, anda akan belajar tentang HTML...</h2>
+                  </div>
+                  <div class="absolute bottom-0 right-0  p-3">
+                    <h2 id="articleCategory" class="text-xs">#beginner</h2>
+                  </div>
+                </div>
+              </a>
             </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <a href="RArticle.html"><img src="assets/Article2.png" class="bgImage">
+                <div class="absolute inset-0 flex items-bottom">
+                  <div class="ml-5" style="position: absolute; bottom: 0; left: 0; right: 0; margin-bottom: 40px;">
+                    <h2 class="font-bold text-2xl" id="articleTitle">Belajar Coding bersama Jo!</h2>
+                    <h2 id="articleSubtitle" class="text-xs">jocelynang</h2>
+                    <h2 class="text-l" id="articleSubtitle">Hi teman-teman, kali ini aku mau sharing tentang...</h2>
+                  </div>
+                </div>
+              </a>
+              <div class="absolute bottom-0 right-0  p-3">
+                <h2 id="articleCategory" class="text-xs">#intermediate</h2>
+              </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <a href="RArticle.html"><img src="assets/Article3.png" class="bgImage">
+                <div class="absolute inset-0 flex items-bottom">
+                  <div class="ml-5" style="position: absolute; bottom: 0; left: 0; right: 0; margin-bottom: 40px;">
+                    <h2 class="font-bold text-2xl" id="articleTitle">Cara coding cepat</h2>
+                    <h2 id="articleSubtitle" class="text-xs">bryan_koh</h2>
+                    <h2 class="text-l" id="articleSubtitle">Wah ternyata ada beberapa tips untuk coding cepat nih!...
+                    </h2>
+                  </div>
+                  <div class="absolute bottom-0 right-0  p-3">
+                    <h2 id="articleCategory" class="text-xs">#beginner</h2>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <a href="RArticle.html"><img src="assets/Article4.png" class="bgImage">
+                <div class="absolute inset-0 flex items-bottom">
+                  <div class="ml-5" style="position: absolute; bottom: 0; left: 0; right: 0; margin-bottom: 40px;">
+                    <h2 class="font-bold text-2xl" id="articleTitle">Ternyata C++ itu gampang?</h2>
+                    <h2 id="articleSubtitle" class="text-xs">erica_81</h2>
+                    <h2 class="text-l" id="articleSubtitle">Di artikel kali ini, ada yang menarik nih...</h2>
+                  </div>
+                  <div class="absolute bottom-0 right-0  p-3">
+                    <h2 id="articleCategory" class="text-xs">#advanced</h2>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+              data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+              data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+              data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+              data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+              data-carousel-slide-to="4"></button>
+          </div>
+          <!-- Slider controls -->
+          <button type="button"
+            class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev>
+            <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button type="button"
+            class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next>
+            <span
+            class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none"
+                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+          <!-- Slider -->
+        </div>
+        <div class="flex-1 mt-5 ml-2">
+          <h2 id="darkTextColor" class="font-bold text-2xl">Categories</h2>
+          <div class="flex-1 ml-10 mt-3">
+            <a href="#">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3">
+                #laravel
+              </div>
+            </a>
+            <a href="#">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3 ml-5 ">
+                #oop</div>
+            </a>
+            <a href="#">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3 ml-5 ">
+                #python</div>
+            </a>
+            <a href="#">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3 ml-5 ">
+                #java</div>
+            </a>
+          </div>
+          <div class="flex-1 ml-10 mt-3">
+            <a href="#">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3">#react
+              </div>
+            </a>
+            <a href="#">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3 ml-5 ">
+                #tailwind</div>
+            </a>
+            <a href="#">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3 ml-5 ">
+                #c++</div>
+            </a>
+            <a href="#">
+              <div class="border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3 ml-5 ">
+                #php</div>
+            </a>
           </div>
         </div>
       </div>
-      <div class="flex-1">04</div>
+
+      <div class="flex-1 flex-col ml-10">
+        <h2 id="darkTextColor" class="font-bold text-2xl">Recommendations</h2>
+
+        <a href="RArticle.html">
+          <div class="flex-1 ml-10 mt-3 pb-3 border-[#E3EEFF] border-b-2">
+            <div class="flex justify-between items-center">
+
+              <h2 id="darkTextColor" class="font-bold text-xl">Belajar Web Yuk!</h2>
+              <p id="advancedCategory" class="text-sm font-bold ml-2">#advanced</p>
+
+            </div>
+            <h2 id="darkTextColor" class="text-xs mb-3">jennifer_law</p>
+              <h2 class="text-l" id="darkTextColor">Artikel ini akan membahas tentang semua hal yang kamu ketahui
+                tentang website, dari HTML, CSS, Javascript sampai framework lainnya yang populer seperti...</h2>
+              <div style="text-align: right;">
+                <h2 id="darkTextColor" class="text-xs italic">5 mins read</h2>
+              </div>
+          </div>
+        </a>
+        <a href="RArticle.html">
+          <div class="flex-1 ml-10 mt-3 pb-3 border-[#E3EEFF] border-b-2">
+            <div class="flex justify-between items-center">
+              <h2 id="darkTextColor" class="font-bold text-xl">JavaScript atau CSS lebih penting?</h2>
+              <p id="beginnerCategory" class="text-sm font-bold ml-2">#beginner</p>
+
+            </div>
+            <h2 id="darkTextColor" class="text-xs mb-3">jlo19</p>
+              <h2 class="text-l" id="darkTextColor">Untuk kalian yang pemula, pasti bingung kan sebenarnya apa sih
+                perbedaan JavaScript dengan CSS?
+                Dan manakah yang lebih penting?
+              </h2>
+              <div style="text-align: right;">
+                <h2 id="darkTextColor" class="text-xs italic">8 mins read</h2>
+              </div>
+          </div>
+        </a>
+        <a href="RArticle.html">
+          <div class="flex-1 ml-10 mt-3 pb-3 border-[#E3EEFF] border-b-2">
+            <div class="flex justify-between items-center">
+              <h2 id="darkTextColor" class="font-bold text-xl">Coding itu mudah!</h2>
+              <p id="intermediateCategory" class="text-sm font-bold ml-2">#intermediate</p>
+
+            </div>
+            <h2 id="darkTextColor" class="text-xs mb-3">shynka01</p>
+              <h2 class="text-l" id="darkTextColor">Sebenarnya, coding itu mudah loh gaes! Disini aku akan bagi beberapa
+                tips
+                untuk kalian semua nih. ....
+              </h2>
+              <div style="text-align: right;">
+                <h2 id="darkTextColor" class="text-xs italic">20 mins read</h2>
+              </div>
+          </div>
+        </a>
+        <a href="RArticle.html">
+          <div class="flex-1 ml-10 mt-3 pb-3 border-[#E3EEFF] border-b-2">
+            <div class="flex justify-between items-center">
+              <h2 id="darkTextColor" class="font-bold text-xl">JavaScript atau CSS lebih penting?</h2>
+              <p id="beginnerCategory" class="text-sm font-bold ml-2">#beginner</p>
+
+            </div>
+            <h2 id="darkTextColor" class="text-xs mb-3">jlo19</p>
+              <h2 class="text-l" id="darkTextColor">Untuk kalian yang pemula, pasti bingung kan sebenarnya apa sih
+                perbedaan JavaScript dengan CSS?
+                Dan manakah yang lebih penting?
+              </h2>
+              <div style="text-align: right;">
+                <h2 id="darkTextColor" class="text-xs italic">10 mins read</h2>
+              </div>
+          </div>
+        </a>
+      </div>
     </div>
+    <div class="flex-col mt-5">
+      <h2 id="darkTextColor" class="font-bold text-2xl">Trending Articles</h2>
+      <div class="flex-1 pb-3">
+        <h2 id="darkTextColor" class="text-l">Get to know popular articles this month</h2>
+      </div>
+    </div>
+    <div class="flex mt-5">
+      <div class="flex-1 pb-3">
+        <div id="animation-carousel" class="relative w-full" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-50">
+            <!-- Item 1-3 -->
+            <div class="hidden duration-200 ease-linear" data-carousel-item>
+              <div class="carousel-slide">
+
+                <div class="slide-image">
+                  <a href="RArticle.html">
+                    <img src="assets/Article2.png" class="bgImages">
+                    <div class="image-text">
+                      <h2 class="font-bold text-xl" id="articleTitle">Belajar Coding bersama Jo!</h2>
+                      <h2 id="articleSubtitle" class="text-xs">jocelynang</h2>
+                      <h2 class="text-l" id="articleSubtitle">Hi teman-teman, kali ini aku mau sharing tentang...</h2>
+
+                  </a>
+                </div>
+
+              </div>
+
+
+              <div class="slide-image">
+                <a href="RArticle.html">
+                  <img src="assets/Article1.png" class="bgImages">
+                  <div class="image-text">
+                    <h2 class="font-bold text-xl" id="articleTitle">Membuat website itu mudah</h2>
+                    <h2 id="articleSubtitle" class="text-xs">patricianat</h2>
+                    <h2 class="text-l" id="articleSubtitle">Di artikel ini, anda akan belajar tentang HTML...</h2>
+                </a>
+              </div>
+            </div>
+
+            <div class="slide-image">
+              <a href="RArticle.html">
+                <img src="assets/Article3.png" class="bgImages">
+                <div class="image-text">
+                  <h2 class="font-bold text-xl" id="articleTitle">Cara coding cepat</h2>
+                  <h2 id="articleSubtitle" class="text-xs">bryan_koh</h2>
+                  <h2 class="text-l" id="articleSubtitle">Wah ternyata ada beberapa tips untuk coding cepat nih!...
+                  </h2>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- Item 4-6 -->
+      <div class="hidden duration-200 ease-linear" data-carousel-item>
+
+          <div class="slide-image">
+            <a href="#">
+              <img src="assets/Article4.png" class="bgImages">
+              <div class="image-text">
+                <h2 class="font-bold text-2xl" id="articleTitle">Ternyata C++ itu gampang?</h2>
+                    <h2 id="articleSubtitle" class="text-xs">erica_81</h2>
+                    <h2 class="text-l" id="articleSubtitle">Di artikel kali ini, ada yang menarik nih...</h2>
+                </h2>
+            </a>
+            
+          </div>
+      </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button"
+      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev>
+      <span
+        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button"
+      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next>
+      <span
+        class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30  group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-5 h-5 text-white sm:w-6 sm:h-6" fill="none" stroke="currentColor"
+          viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+
+
+
+  </div>
+  </div>
+
+
+
   </div>
 
 </body>
