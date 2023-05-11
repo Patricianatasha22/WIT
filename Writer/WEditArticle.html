@@ -16,11 +16,8 @@
 </head>
 <!-- <body class = "font-sans ..."> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-<body style="font-family: Arial, Helvetica, sans-serif;;">
+<body style="font-family: Arial, Helvetica, sans-serif; color:#2B546A">
        <!-- Navigation Bar -->
        <div class="border-b-2 border-b-500 border-[#E3EEFF]">
         <div class="navbar bg-base-100">
@@ -105,72 +102,118 @@
 
     <!-- Navigation Bar -->
 
-    <div class="md:container md:mx-auto mt-3" style="color:#2B546A">
+    <div class="container mx-auto text-[#2B546A]">
+        <!-- TITLE -->
+        <div class="container mt-12 mb-5 flex justify-center">
+            <p class="capitalize font-semibold text-3xl">New Article</p>
+        </div>
+    </div>
+    <div class="md:container md:mx-auto mt-3 text-[#2B546A]">
 
         <div class="container mx-auto mt-6 flex items-center" style="background-color: #FFFFFF;">
 
-            <div class="container bg-[#F1F7FF] px-10 pb-5 mb-3 rounded-xl">
-                <div class="container mt-5 mb-5 flex justify-center">
-                    <p class="capitalize font-semibold text-3xl" id="darkTextColor">My Revenue</p>
-                </div>
-                Choose the date:
-                <input type="text" id="datepicker" class="bg-[#E3EEFF] ml-2"
-                    style="border-radius:10px; text-align: center">
-                <div>
-                    <div class="flex-1 ml-10 mt-3 border-[#E3EEFF] border-b-2">
-                        <div class="flex justify-between items-center"
-                            style="text-align:center;  display: flex; justify-content: center; align-items: center;">
-                        </div>
-                        <h2 id="darkTextColor" class="text-l mb-3 mr-10 font-bold">Views: 23</h2>
+            <div class="container bg-[#F1F7FF] px-10 pt-5 pb-5 mb-3 rounded-xl">
 
-                    </div>
-                    <div class="flex-1 ml-10 mt-3 border-[#E3EEFF] border-b-2">
-                        <div class="flex justify-between items-center"
-                            style="text-align:center;  display: flex; justify-content: center; align-items: center;">
-                        </div>
-                        <h2 id="darkTextColor" class="text-l mb-3 mr-10 font-bold">Likes: 10</h2>
+                <a href="WHomePage.html">
+                    <button class="rounded-full mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                        </svg>
+                    </button> </a>
+                <div class="container inline-flex ">
+                    <div class="inline-flex flex-1 pr-10 pb-3">
 
-                    </div>
-                    <div class="flex-1 ml-10 mt-3 border-[#E3EEFF] border-b-2">
-                        <div class="flex justify-between items-center"
-                            style="text-align:center;  display: flex; justify-content: center; align-items: center;">
-                        </div>
-                        <h2 id="darkTextColor" class="text-l mb-3 mr-10 font-bold">Articles: 4</h2>
+                        <div class="container flex ">
 
-                    </div>
-                    <div class="flex-1 ml-10 mt-3 border-[#E3EEFF] border-b-2">
-                        <div class="flex justify-between items-center"
-                            style="text-align:center;  display: flex; justify-content: center; align-items: center;">
+                            <div class="text-md pr-3"
+                                style="text-align:center;  display: flex; justify-content: center; align-items: center;">
+                                <h2 id="darkTextColor" class="text-xl">Level: </h2>
+                            </div>
+                            <select class="select select-sm max-w-xs rounded-full bg-[#E3EEFF] hover:bg-gray-100"
+                                id="darkTextColor">
+                                <option selected>Beginner</option>
+                                <option>Intermediate</option>
+                                <option>Advanced</option>
+                            </select>
                         </div>
-                        <h2 id="darkTextColor" class="text-l mb-3 mr-10 font-bold">Followers: 48</h2>
+                    </div>
+
+                    <div class="inline-flex items-center">
 
                     </div>
                 </div>
+                <div class="container inline-flex ">
+                    <div class="inline-flex flex-1 pr-10 pb-3">
+                        <div class="container flex ">
+                            <div class="container flex-1 pr-10">
+                                <input type="text" placeholder="Title" value = "Front-end Programming" class="input input-2xl w-full max-w-xs text-2xl"
+                                    style="border-radius:10px"/>
 
-
-                <div class="container mt-5 mb-5">
-                    <h2 id="darkTextColor" class="text-2xl mb-3 mr-10 font-bold">Total</h2>
-                    <h2 id="darkTextColor" class="text-5xl mb-5 mr-10 ml-5">Rp.200.000</h2>
-                    <a href="#">
-                        <div class=" font-bold text-[#2B546A] bg-[#4EC03B] inline-block rounded-full px-3">
-                          Withdraw Revenue
+                            </div>
                         </div>
-                      </a>
+                    </div>
+
+                    <div class="inline-flex items-center">
+                        <a href="WHomePage.html">
+                            <div class=" bg-[#E05252] inline-block rounded-full px-3 py-1 mr-3">
+                                <h2 class="text-l font-bold">Discard </h2>
+                            </div>
+                        </a>
+                        <a href="WHomePage.html">
+                            <div class=" bg-[#4EC03B] inline-block rounded-full px-3 py-1 mr-3">
+                                <h2 class="text-l font-bold">Post </h2>
+                            </div>
+                        </a>
+                    </div>
                 </div>
+
+
+                <div class="container bg-[#E3EEFF] px-10 pb-5 mb-3 rounded-xl">
+                    <div class="container inline-flex ">
+                        <div class="inline-flex flex-1 pr-10 pb-3">
+                            <div class="container flex ">
+                            </div>
+                        </div>
+
+                        <div class="inline-flex items-center">
+                            <div class="pt-3">
+                                <button class="rounded-full p-2" onclick="clearTextArea()">
+                                    <img src="assets/Delete.svg" class="w-6 h-5">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container inline-flex ">
+                        <div class="inline-flex flex-1 pr-10 pb-3">
+                            <div class="container flex ">
+                                <div class="container flex-1 pr-10 pt-5">
+                                    <textarea id="myTextArea" class="bg-transparent"
+                                        placeholder="Write your contents here" rows="6" cols="135">Artikel ini akan membahas seputar front-end dimana hal ini merupakan hal yang wajib kalian ketahui kalau kalian ingin menjadi web developer.
+#frontend #css #html
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <button class="rounded-full p-2 bg-[#E3EEFF] font-bold" id="darkTextColor">
+                    Add Quiz to this article +
+                </button>
             </div>
-        </div>
-    </div>
 
 
 
-    <script>
-        $(function () {
-            $('#datepicker').datepicker({
-                dateFormat: 'MM, dd yy'
-            }).datepicker('setDate', new Date());
-        });
-    </script>
-
+            <!-- JAVA SCRIPT -->
+            <script>
+                function clearTextArea() {
+                    document.getElementById("myTextArea").value = "";
+                }
+            </script>
 </body>
 
 </html>

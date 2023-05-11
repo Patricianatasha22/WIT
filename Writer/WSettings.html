@@ -1,0 +1,308 @@
+<!doctype html>
+<html data-theme="lofi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bgImage {
+            border-radius: 10px;
+            /* opacity: 75%; */
+            filter: blur(1px);
+            box-shadow: 10px 5px 8px #888888;
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+        }
+
+        .bgImages {
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            /* object-fit: cover; */
+        }
+
+
+
+        #articleTitle {
+            color: #F9FBFE
+        }
+
+        #articleCategory {
+            color: #d1dbe9
+        }
+
+        #articleSubtitle {
+            color: #E3EEFF
+        }
+
+        #darkTextColor {
+            color: #2B546A
+        }
+
+        #beginnerCategory {
+            color: #F19100
+        }
+
+        #intermediateCategory {
+            color: #A3A0DA
+        }
+
+        #advancedCategory {
+            color: #FE7F8C
+        }
+
+        input[type="checkbox"]:checked {
+            background-color: rgb(57, 143, 54);
+            border-radius: 10px;
+        }
+        #myCheckbox{
+            border-radius: 10px;
+        }
+
+
+
+        /* Style the dropdown content (hidden by default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            z-index: 1;
+        }
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown links on hover */
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* Add a grey background color to dropdown links that are disabled */
+        .dropdown-content a.disabled {
+            background-color: #ddd;
+            color: #aaa;
+            cursor: not-allowed;
+        }
+    </style>
+
+</head>
+<!-- <body class = "font-sans ..."> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+       <!-- Navigation Bar -->
+       <div class="border-b-2 border-b-500 border-[#E3EEFF]">
+        <div class="navbar bg-base-100">
+            <div class="flex-none">
+                <a href="WHomePage.html">
+                    <button class="btn btn-square btn-ghost" style="width: 100px ;">
+                        <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
+                    </button>
+                </a>
+            </div>
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
+                <a class="btn btn-ghost normal-case text-xl">Help</a>
+            </div>
+            <table style="text-align: right; padding-right: 12px;">
+                <tr>
+                    <td>
+                        Patricia
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Level 20
+                    </td>
+                </tr>
+            </table>
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="avatar placeholder">
+                        <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+                            <span class="text-2xl">P</span>
+                        </div>
+                    </div>
+                </label>
+
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+                    <li style="text-align: center ;">
+                        <label class="swap bg-[#E3EEFF]">
+                            <input type="checkbox" style="display: none;"/>
+                            
+                            <div class="swap-on">
+                              <a href = "../Reader/RHomePage.html">
+                                <div class="pr-2 flex inline-flex items-center">
+                                  <svg class="fill-current mr-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+                                  </svg>
+                                  Reader
+                                </div>
+                              </a>
+                            </div>
+                            
+                            
+                            <div class="swap-off">
+                              <a href = "WHomePage.html">
+                                <div class="pr-2 flex inline-flex items-center">
+                                  <svg fill="#2B546A" class=" mr-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
+                                  </svg>
+                                  Writer
+                                </div>
+                                </a>
+                            </div>
+                          
+                        </label>
+                    </li>
+                    <li><a>Dashboard</a></li>
+                    <li><a href = "WSettings.html">Settings</a></li>
+                    <li><a href="WWithdrawRevenue.html">My Revenue</a></li>
+                    <li><a href="https://progate.com/signin">Logout</a></li>
+                </ul>
+            </div>
+            <div class="flex-none">
+
+                <button class="btn btn-square btn-ghost">
+                    <img src="./assets/Bell.png" style="width: 20px;"></img>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation Bar -->
+
+    <div class="md:container md:mx-auto mt-3">
+        <div class="container mx-auto mt-6 flex items-center" style="background-color: #FFFFFF;">
+            <div class="container bg-[#F1F7FF] px-10 pb-5 mb-3 rounded-xl">
+                <div class="container mt-5 mb-5 flex justify-center">
+                    <p class="capitalize font-semibold text-3xl" id="darkTextColor">Settings</p>
+                </div>
+
+
+                <div class="flex mt-5">
+                    <div class="flex-1 bg-[#E3EEFF] px-10 pb-5 mb-3 rounded-xl">
+                        <table>
+                            <tr>
+                                <td>
+                                    <a href="">
+                                        <div class="flex mt-5  border-[#FFFFF] border-b-5">
+                                            <h2 id="darkTextColor" class="text-xl">Account</h2>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">
+                                        <div class="flex mt-5  border-[#FFFFF] border-b-5">
+                                            <h2 id="darkTextColor" class="text-xl">Change Password </h2>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">
+                                        <div class="flex mt-5  border-[#FFFFF] border-b-5">
+                                            <h2 id="darkTextColor" class="text-xl">Notifications </h2>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="">
+                                        <div class="flex mt-5  border-[#FFFFF] border-b-5">
+                                            <h2 id="darkTextColor" class="text-xl">Payments</h2>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="RSettings.html">
+                                        <div class="flex mt-5  border-[#FFFFF] border-b-5 font-bold">
+                                            <h2 id="darkTextColor" class="text-xl">Change Preferences</h2>
+                                        </div>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="flex-1 bg-[#E3EEFF] ml-5 pt-5 px-10 pb-5 mb-3 rounded-xl" style="flex-basis: 55%;">
+                        <div class="flex">
+                            <div class="flex-1 bg-[#F1F7FF] px-10 pt-5 pb-5 mb-3 rounded-xl">
+                                <h2 id="darkTextColor" class="text-xl font-bold mb-3">Categories</h2>
+                                <label>
+                                    <input id="myCheckbox" type="checkbox" name="example" checked="checked" value="1">
+                                    Java
+                                    </br>
+                                    <input id="myCheckbox" type="checkbox" name="example2" value="2" checked="checked">
+                                    CSS
+                                </label>
+                                </br>
+                                <div class="dropdown mt-3">
+                                    <button class="dropbtn underline">Click here to add more</button>
+                                    <div class="dropdown-content">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Python</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    C++</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    HTML</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex-1 bg-[#F1F7FF] px-10 pt-5 pb-5 mb-3 ml-3 rounded-xl">
+                                <h2 id="darkTextColor" class="text-xl font-bold mb-3">Level</h2>
+                                <label>
+                                    <input id="myCheckbox" type="checkbox" name="example" value="1">
+                                    Beginner
+                                    </br>
+                                    <input id="myCheckbox" type="checkbox" name="example2" value="2" checked="checked">
+                                    Intermediate
+                                    </br>
+                                    <input id="myCheckbox" type="checkbox" name="example2" value="2" checked="checked">
+                                    Advanced
+                                </label>
+                                </br>
+                            </div>
+                        </div>
+
+                       
+                          <div class = "justify-center" style="text-align:center ;">
+                            <a href="WHomePage.html">
+                                <div class="border-4 border-[#E3EEFF] text-white bg-[#398F36] inline-block rounded-full px-3">
+                                  Save
+                                </div>
+                              </a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
