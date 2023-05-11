@@ -1,0 +1,51 @@
+<!doctype html>
+<html data-theme="lofi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body style="font-family: font-sans ;">
+    <!-- NAVBAR -->
+
+
+
+
+    <!-- CONTENTS -->
+    <div class="container mx-auto text-[#2B546A] border">
+        <!-- TITLE -->
+        <div class="container mt-12 mb-5 flex justify-center">
+            <p class="capitalize font-semibold text-2xl">My Dashboard</p>
+        </div>
+
+        <!-- CHARTS -->
+        <div class="container inline-flex sm:flex-wrap justify-between items-center">
+            <div class="h-max w-7/12">
+                <div class="w-full">
+                    <canvas id="rLineChart"></canvas>
+                </div>
+                <p class="text-center font-semibold pt-5">My activity on May</p>
+            </div>
+
+            <div class="h-max w-auto">
+                <div class="w-full">
+                    <canvas id="rDonutChart"></canvas>
+                </div>
+                <p class="text-center font-semibold pt-5">Explored Topics</p>
+            </div>
+        </div>
+
+        <!-- MISSION & REWARDS -->
+        
+    </div>
+
+    <script src="./js/rChart.js"></script>
+</body>
+
+</html>
