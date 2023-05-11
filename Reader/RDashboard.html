@@ -11,16 +11,84 @@
 
 </head>
 
-<body style="font-family: font-sans ; color:#2B546A">
-<!-- Navigation Bar -->
-<div class="border-b-2 border-b-500 border-[#E3EEFF]">
-  <div class="navbar bg-base-100">
-    <div class="flex-none">
-      <a href ="RHomePage.html">
-      <button class="btn btn-square btn-ghost" style="width: 100px ;">
-        <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
-      </button>
-      </a>
+<body class="text-[#2B546A]" style="font-family: Arial, Helvetica, sans-serif;">
+    <!-- Navigation Bar -->
+    <div class="border-b-2 border-b-500 border-[#E3EEFF]">
+        <div class="navbar bg-base-100">
+            <div class="flex-none">
+                <a href="RHomePage.html">
+                    <button class="btn btn-square btn-ghost" style="width: 100px ;">
+                        <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
+                    </button>
+                </a>
+            </div>
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">Articles</a>
+                <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
+                <a class="btn btn-ghost normal-case text-xl" href="RCommunityForumPage.html">Community Forum</a>
+            </div>
+            <table style="text-align: right; padding-right: 12px;">
+                <tr>
+                    <td>
+                        Patricia
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Level 20
+                    </td>
+                </tr>
+            </table>
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="avatar placeholder">
+                        <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+                            <span class="text-2xl">P</span>
+                        </div>
+                    </div>
+                </label>
+
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+                    <li style="text-align: center ;">
+                        <table class="table-fixed">
+                            <tr>
+
+                                <td class="bg-[#2B546A]">
+                                    <a href="RHomePage.html">
+                                        <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
+                                            Reader
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td class="bg-[#E3EEFF]">
+                                    <a href="../Writer/WHomePage.html">
+                                        <div class="text-[#2B546A] inline-block rounded-box px-3">
+                                            Writer
+                                        </div>
+                                    </a>
+                                </td>
+                                </a>
+                            </tr>
+                        </table>
+                    </li>
+                    <li><a>Dashboard</a></li>
+                    <li><a>Collections</a></li>
+                    <li><a>Settings</a></li>
+                    <li><a>Help</a></li>
+                    <li><a href="https://progate.com/signin">Logout</a></li>
+                </ul>
+            </div>
+            <div class="flex-none">
+
+                <button class="btn btn-square btn-ghost">
+                    <img src="./assets/Bell.png" style="width: 20px;"></img>
+                </button>
+            </div>
+        </div>
+
+>>>>>>> 47ec529a1b408317523e98a0a2cce49e45f838d8
     </div>
     <div class="flex-1">
       <a class="btn btn-ghost normal-case text-xl" href = "RViewArticles.html">Articles</a>
@@ -100,22 +168,22 @@
 
 
     <!-- CONTENTS -->
-    <div class="container mx-auto text-[#2B546A] border">
+    <div class="container mx-auto pb-24">
         <!-- TITLE -->
         <div class="container mt-12 mb-5 flex justify-center">
             <p class="capitalize font-semibold text-2xl">My Dashboard</p>
         </div>
 
         <!-- CHARTS -->
-        <div class="container inline-flex sm:flex-wrap justify-between items-center">
-            <div class="h-max w-7/12">
+        <div class="container inline-flex sm:flex-wrap justify-evenly items-bottom">
+            <div class="h-max w-full lg:w-7/12">
                 <div class="w-full">
                     <canvas id="rLineChart"></canvas>
                 </div>
                 <p class="text-center font-semibold pt-5">My activity on May</p>
             </div>
 
-            <div class="h-max w-auto">
+            <div class="h-max w-full lg:w-3/12 pt-14 lg:pt-0">
                 <div class="w-full">
                     <canvas id="rDonutChart"></canvas>
                 </div>
@@ -124,9 +192,190 @@
         </div>
 
         <!-- MISSION & REWARDS -->
-        
+        <div>
+            <!-- TITLE -->
+            <div class="container mt-16 mb-5 flex justify-center">
+                <p class="capitalize font-semibold text-2xl">Missions and Rewards</p>
+            </div>
+
+            <div class="container flex flex-wrap justify-between">
+                <!-- CARD COMPONENT 1 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 pb-2">
+                    <div class="card bg-[#E3EEFF] rounded-lg mx-1">
+                        <div class="card-body justify-between">
+                            <div class="inline-flex justify-between">
+                                <p class="w-4/5 font-semibold">Read 10 articles with answered questions</p>
+                                <p class="font-semibold">100%</p>
+                            </div>
+                            <div class="card-actions justify-end items-center">
+                                <p>Got 12 xp</p>
+                                <!-- The button to open modal -->
+                                <label for="mission1"
+                                    class="btn btn-sm bg-white hover:bg-white hover:opacity-50 border-0 text-[#2B546A] rounded-lg">
+                                    claim
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD COMPONENT 2 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 pb-2">
+                    <div class="card bg-[#E3EEFF] rounded-lg mx-1">
+                        <div class="card-body justify-between">
+                            <div class="inline-flex justify-between">
+                                <p class="w-4/5 font-semibold">Write a reply in community forum</p>
+                                <p class="font-semibold">100%</p>
+                            </div>
+                            <div class="card-actions justify-end items-center">
+                                <p>Got 5 xp</p>
+                                <!-- The button to open modal -->
+                                <label for="mission2"
+                                    class="btn btn-sm bg-white hover:bg-white hover:opacity-50 border-0 text-[#2B546A] rounded-lg">claim</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD COMPONENT 3 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 pb-2">
+                    <div class="card bg-[#E3EEFF] rounded-lg mx-1">
+                        <div class="card-body justify-between">
+                            <div class="inline-flex justify-between">
+                                <p class="w-4/5 font-semibold">Leave a comment on someone's article</p>
+                                <p class="font-semibold">100%</p>
+                            </div>
+                            <div class="card-actions justify-end items-center">
+                                <p>Got 5 xp</p>
+                                <!-- The button to open modal -->
+                                <label for="mission3"
+                                    class="btn btn-sm bg-white hover:bg-white hover:opacity-50 border-0 text-[#2B546A] rounded-lg">claim</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD COMPONENT 4 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 pb-2">
+                    <div class="card bg-[#E3EEFF] rounded-lg mx-1">
+                        <div class="card-body justify-between">
+                            <div class="inline-flex justify-between">
+                                <p class="w-4/5 font-semibold">Read 5 articles with answered questions</p>
+                                <p class="font-semibold">30%</p>
+                            </div>
+                            <div class="card-actions justify-end items-center">
+                                <p>Got 15 xp</p>
+                                <!-- The button to open modal -->
+                                <label for="mission4"
+                                    class="btn btn-sm bg-white hover:bg-white hover:opacity-50 border-0 text-[#2B546A] rounded-lg"
+                                    disabled>
+                                    claim
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD COMPONENT 5 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 pb-2">
+                    <div class="card bg-[#E3EEFF] rounded-lg mx-1">
+                        <div class="card-body justify-between">
+                            <div class="inline-flex justify-between">
+                                <p class="w-4/5 font-semibold">Create a post in community forum</p>
+                                <p class="font-semibold">0%</p>
+                            </div>
+                            <div class="card-actions justify-end items-center">
+                                <p>Got 12 xp</p>
+                                <!-- The button to open modal -->
+                                <label for="mission5"
+                                    class="btn btn-sm bg-white hover:bg-white hover:opacity-50 border-0 text-[#2B546A] rounded-lg"
+                                    disabled>claim</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- CARD COMPONENT 6 -->
+                <div class="w-full md:w-1/2 lg:w-1/3 pb-2">
+                    <div class="card bg-[#E3EEFF] rounded-lg mx-1">
+                        <div class="card-body justify-between">
+                            <div class="inline-flex justify-between">
+                                <p class="w-4/5 font-semibold">Leave a comment on someone's article</p>
+                                <p class="font-semibold">0%</p>
+                            </div>
+                            <div class="card-actions justify-end items-center">
+                                <p>Got 5 xp</p>
+                                <!-- The button to open modal -->
+                                <label for="mission6"
+                                    class="btn btn-sm bg-white hover:bg-white hover:opacity-50 border-0 text-[#2B546A] rounded-lg"
+                                    disabled>claim</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 
+
+    <!-- CARD MODALS 1 -->
+    <input type="checkbox" id="mission1" class="modal-toggle" />
+    <label for="mission1" class="modal cursor-pointer">
+        <label class="modal-box relative" for="">
+            <p class="text-lg font-bold">Rewards claimed!</p>
+            <p class="py-4">Congratulations you got 12 xp!</p>
+        </label>
+    </label>
+
+    <!-- CARD MODALS 2 -->
+    <input type="checkbox" id="mission2" class="modal-toggle" />
+    <label for="mission2" class="modal cursor-pointer">
+        <label class="modal-box relative" for="">
+            <p class="text-lg font-bold">Rewards claimed!</p>
+            <p class="py-4">Congratulations you got 5 xp!</p>
+        </label>
+    </label>
+
+    <!-- CARD MODALS 3 -->
+    <input type="checkbox" id="mission3" class="modal-toggle" />
+    <label for="mission3" class="modal cursor-pointer">
+        <label class="modal-box relative" for="">
+            <p class="text-lg font-bold">Rewards claimed!</p>
+            <p class="py-4">Congratulations you got 5 xp!</p>
+        </label>
+    </label>
+
+    <!-- CARD MODALS 4 -->
+    <input type="checkbox" id="mission4" class="modal-toggle" />
+    <label for="mission4" class="modal cursor-pointer">
+        <label class="modal-box relative" for="">
+            <p class="text-lg font-bold">Rewards claimed!</p>
+            <p class="py-4">Congratulations you got 15 xp!</p>
+        </label>
+    </label>
+
+    <!-- CARD MODALS 5 -->
+    <input type="checkbox" id="mission5" class="modal-toggle" />
+    <label for="mission5" class="modal cursor-pointer">
+        <label class="modal-box relative" for="">
+            <p class="text-lg font-bold">Rewards claimed!</p>
+            <p class="py-4">Congratulations you got 12 xp!</p>
+        </label>
+    </label>
+
+    <!-- CARD MODALS 6 -->
+    <input type="checkbox" id="mission6" class="modal-toggle" />
+    <label for="mission6" class="modal cursor-pointer">
+        <label class="modal-box relative" for="">
+            <p class="text-lg font-bold">Rewards claimed!</p>
+            <p class="py-4">Congratulations you got 5 xp!</p>
+        </label>
+    </label>
     <script src="./js/rChart.js"></script>
 </body>
 

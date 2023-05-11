@@ -1,17 +1,30 @@
 <!doctype html>
 <html data-theme="lofi">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- CDN -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+<!-- CSS -->
+<style>
+  .bgImage {
+            border-radius: 10px;
+            /* opacity: 75%; /
+            filter: blur(1px);
+            box-shadow: 10px 5px 8px #888888;
+            width: 100%;
+            height: 100%;
+            / object-fit: cover; */
+        }
+</style>
+
 </head>
-
-<body style="font-family: Arial, Helvetica, sans-serif; color:#2B546A">
- <!-- Navigation Bar -->
- <div class="border-b-2 border-b-500 border-[#E3EEFF]">
+<body style="font-family: Arial, Helvetica, sans-serif;">
+    <!-- Navigation Bar -->
+  <div class="border-b-2 border-b-500 border-[#E3EEFF]">
     <div class="navbar bg-base-100">
       <div class="flex-none">
         <a href ="RHomePage.html">
@@ -21,7 +34,7 @@
         </a>
       </div>
       <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl" href = "RViewArticles.html">Articles</a>
+        <a class="btn btn-ghost normal-case text-xl">Articles</a>
         <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
         <a class="btn btn-ghost normal-case text-xl" href = "RCommunityForumPage.html">Community Forum</a>
       </div>
@@ -47,96 +60,289 @@
         </label>
         
         <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
-          <li style="text-align: center ;" class = "bg-[#F1F7FF]">
-            <label class="swap">
-              <input type="checkbox" style="display: none;"/>
+          <li style="text-align: center ;">
+            <table class = "table-fixed">
+              <tr>
+                
+                <td class = "bg-[#2B546A]">
+                  <a href="RHomePage.html">
+                    <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
+                      Reader
+                    </div>
+                  </a>
+                </td>
               
-              <div class="swap-off">
-                <a href = "RHomePage.html">
-                  <div class="pr-2 flex inline-flex items-center">
-                    <svg class="fill-current mr-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                    </svg>
-                    Reader
+                <td class = "bg-[#E3EEFF]">
+                  <a href="../Writer/WHomePage.html">
+                  <div class="text-[#2B546A] inline-block rounded-box px-3">
+                    Writer 
                   </div>
                 </a>
-              </div>
-              
-              
-              <div class="swap-on">
-                <a href = "../Writer/WHomePage.html">
-                  <div class="pr-2 flex inline-flex items-center">
-                    <svg class="fill-current mr-3" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125" />
-                    </svg>
-                    Writer
-                  </div>
-                  </a>
-              </div>
-            
-          </label>
+                </td>
+              </a>
+              </tr>
+            </table>
           </li>
           <li><a>Dashboard</a></li>
           <li><a>Collections</a></li>
-          <li><a href = "RSettings.html">Settings</a></li>
+          <li><a>Settings</a></li>
           <li><a>Help</a></li>
           <li><a href = "https://progate.com/signin">Logout</a></li>
         </ul>
       </div>
       <div class="flex-none">
 
+        <button class="btn btn-square btn-ghost">
+          <img src="./assets/Bell.png" style="width: 20px;"></img>
+        </button>
+      </div>
     </div>
 
-    <!-- Navigation Bar -->
+  </div>
 
+    <!-- content -->
+  <div class="md:container md:mx-auto mt-3 px-20">
+      <!-- component name -->
+      <div class="grid grid-cols-6 py-2 mx-0">
 
+          <div class="flex col-span-3" style="justify-content:flex-end" >
 
+              <div class="col-span-2 mt-1">
+                  <label tabindex="0" class="btn btn-ghost btn-circle avatar" >
+                      <div class="w-24 rounded-full">
+                          <img src="./assets/Profile Pic.png" />
+                      </div>
+                  </label>
+              </div>
 
-    <!-- CONTENTS -->
-    <div class="container mx-auto pb-24">
-        <!-- TITLE -->
-        <div class="container mt-12 mb-5 flex justify-center">
-            <p class="capitalize font-semibold text-2xl">Community Forum</p>
-        </div>
+              <div class="col-span-3 mt-1 ml-2">
+                  <p class="text-s font-bold" style="color:#2B546A;">Wynne</p>
+                  <div class="col-span-3 flex mt-1">
+                      <div class="col-span-2 mr-2">
+                          <svg width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.3661 12.1556C13.497 11.4028 14.3555 10.306 14.8148 9.02748C15.2741 7.74896 15.3097 6.35657 14.9165 5.05621C14.5232 3.75586 13.7219 2.61658 12.6311 1.80685C11.5403 0.997126 10.2178 0.559937 8.85929 0.559937C7.50077 0.559937 6.17832 0.997126 5.08749 1.80685C3.99666 2.61658 3.19536 3.75586 2.8021 5.05621C2.40884 6.35657 2.44449 7.74896 2.90378 9.02748C3.36307 10.306 4.22162 11.4028 5.35245 12.1556C3.30688 12.9096 1.55991 14.3047 0.37222 16.1329C0.309799 16.2256 0.266441 16.3299 0.244667 16.4396C0.222893 16.5492 0.223137 16.6622 0.245384 16.7717C0.267632 16.8813 0.311439 16.9854 0.37426 17.0779C0.437081 17.1704 0.517662 17.2495 0.61132 17.3106C0.704978 17.3717 0.809844 17.4135 0.919822 17.4337C1.0298 17.4539 1.1427 17.4521 1.25195 17.4283C1.36121 17.4044 1.46464 17.3592 1.55623 17.295C1.64783 17.2309 1.72576 17.1492 1.7855 17.0547C2.55162 15.8763 3.59994 14.9081 4.83527 14.2378C6.07061 13.5675 7.45382 13.2164 8.85929 13.2164C10.2648 13.2164 11.648 13.5675 12.8833 14.2378C14.1186 14.9081 15.167 15.8763 15.9331 17.0547C16.0568 17.2386 16.248 17.3664 16.4653 17.4105C16.6825 17.4546 16.9084 17.4115 17.0941 17.2904C17.2798 17.1692 17.4103 16.9799 17.4575 16.7633C17.5047 16.5467 17.4648 16.3203 17.3464 16.1329C16.1587 14.3047 14.4117 12.9096 12.3661 12.1556ZM4.21866 6.89063C4.21866 5.9728 4.49083 5.07558 5.00075 4.31244C5.51067 3.54929 6.23544 2.95449 7.0834 2.60325C7.93136 2.25201 8.86444 2.16011 9.76463 2.33917C10.6648 2.51823 11.4917 2.96021 12.1407 3.60921C12.7897 4.25821 13.2317 5.08509 13.4107 5.98529C13.5898 6.88548 13.4979 7.81856 13.1467 8.66652C12.7954 9.51448 12.2006 10.2392 11.4375 10.7492C10.6743 11.2591 9.77712 11.5313 8.85929 11.5313C7.62895 11.5299 6.4494 11.0405 5.57941 10.1705C4.70943 9.30052 4.22006 8.12097 4.21866 6.89063ZM26.3819 17.3004C26.1945 17.4226 25.9662 17.4654 25.7472 17.4193C25.5283 17.3732 25.3366 17.242 25.2143 17.0547C24.4491 15.8756 23.4009 14.9069 22.1654 14.2369C20.9298 13.5669 19.5461 13.2169 18.1405 13.2188C17.9168 13.2188 17.7022 13.1299 17.5439 12.9716C17.3857 12.8134 17.2968 12.5988 17.2968 12.375C17.2968 12.1512 17.3857 11.9366 17.5439 11.7784C17.7022 11.6201 17.9168 11.5313 18.1405 11.5313C18.8239 11.5306 19.4988 11.379 20.1168 11.0874C20.7348 10.7957 21.2808 10.3711 21.7157 9.84394C22.1507 9.31679 22.4638 8.70008 22.6327 8.03789C22.8017 7.3757 22.8223 6.68437 22.6931 6.01329C22.5639 5.3422 22.2881 4.70794 21.8853 4.15582C21.4826 3.6037 20.9629 3.14734 20.3633 2.81936C19.7637 2.49138 19.0991 2.29987 18.417 2.25851C17.7348 2.21715 17.052 2.32697 16.4172 2.58012C16.3137 2.62486 16.2023 2.64841 16.0895 2.64936C15.9768 2.65031 15.865 2.62866 15.7607 2.58567C15.6565 2.54268 15.5619 2.47924 15.4826 2.39908C15.4033 2.31893 15.3409 2.22369 15.299 2.119C15.2571 2.01431 15.2366 1.90228 15.2388 1.78955C15.2409 1.67681 15.2657 1.56565 15.3115 1.46263C15.3573 1.35961 15.4234 1.26682 15.5057 1.18975C15.588 1.11268 15.6849 1.05289 15.7907 1.01391C17.2435 0.434519 18.8594 0.413669 20.3266 0.955382C21.7939 1.4971 23.0086 2.56299 23.7363 3.94744C24.464 5.33188 24.6533 6.93678 24.2675 8.45253C23.8818 9.96828 22.9484 11.2875 21.6474 12.1556C23.693 12.9096 25.4399 14.3047 26.6276 16.1329C26.7498 16.3203 26.7926 16.5486 26.7465 16.7675C26.7004 16.9865 26.5693 17.1781 26.3819 17.3004Z" fill="black"/>
+                          </svg>
+                      </div>
+                      <div class="col-span-1 mt-1">
+                          <p class="text-xs">1.1k followers · 1 following </p>
+                      </div>
+                  </div>
+                  
+                  <div class=" mt-2 border-4 border-[#E3EEFF] text-[#2B546A] bg-[#E3EEFF] rounded-full px-3 text-center flex" style="justify-content:center; align-items:center;">
+                      <p class="text-xs">followed</p>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" ml-1 w-3 h-3 inline-block">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                      </svg>
+                  </div>
+              </div>
 
-        <!-- SEARCH BAR & EDIT BUTTON -->
-        <div class="form-control">
-            <div class="container inline-flex items-center">
-                <!-- SEARCH BAR -->
-                <div class="ml-2 w-full ">
-                    <input type="text" placeholder="What are you looking for today, Patricia?"
-                        class="input input-ghost input-sm w-full rounded-full " />
-                </div>
+          </div>
 
-                <!-- EDIT BUTTON -->
+          <div class="col-span-3 flex" style="justify-content:center; align-items:center;">
+              <div class="w-4 rounded-full mr-5">
+                <a href="https://www.instagram.com/">
+                  <svg width="30" height="30" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.5003 14.9479C19.0278 14.9479 17.6156 15.5329 16.5744 16.5741C15.5332 17.6153 14.9482 19.0275 14.9482 20.5C14.9482 21.9725 15.5332 23.3847 16.5744 24.4259C17.6156 25.4672 19.0278 26.0521 20.5003 26.0521C21.9728 26.0521 23.385 25.4672 24.4262 24.4259C25.4675 23.3847 26.0524 21.9725 26.0524 20.5C26.0524 19.0275 25.4675 17.6153 24.4262 16.5741C23.385 15.5329 21.9728 14.9479 20.5003 14.9479Z" fill="black"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.5656 5.26509C17.5038 4.60687 23.4966 4.60687 29.4348 5.26509C32.6789 5.62726 35.2944 8.18122 35.6754 11.4373C36.3796 17.4586 36.3796 23.5414 35.6754 29.5627C35.2944 32.8188 32.6789 35.3728 29.4365 35.7366C23.4978 36.395 17.5044 36.395 11.5656 35.7366C8.32152 35.3728 5.70606 32.8188 5.3251 29.5644C4.6208 23.5426 4.6208 17.4592 5.3251 11.4373C5.70606 8.18122 8.32152 5.62726 11.5656 5.26509ZM29.0419 10.25C28.5888 10.25 28.1543 10.43 27.8339 10.7504C27.5135 11.0707 27.3336 11.5053 27.3336 11.9583C27.3336 12.4114 27.5135 12.8459 27.8339 13.1663C28.1543 13.4867 28.5888 13.6667 29.0419 13.6667C29.495 13.6667 29.9295 13.4867 30.2499 13.1663C30.5702 12.8459 30.7502 12.4114 30.7502 11.9583C30.7502 11.5053 30.5702 11.0707 30.2499 10.7504C29.9295 10.43 29.495 10.25 29.0419 10.25ZM12.3856 20.5C12.3856 18.3479 13.2406 16.2839 14.7624 14.7621C16.2841 13.2404 18.3481 12.3854 20.5002 12.3854C22.6523 12.3854 24.7163 13.2404 26.2381 14.7621C27.7599 16.2839 28.6148 18.3479 28.6148 20.5C28.6148 22.6521 27.7599 24.7161 26.2381 26.2379C24.7163 27.7597 22.6523 28.6146 20.5002 28.6146C18.3481 28.6146 16.2841 27.7597 14.7624 26.2379C13.2406 24.7161 12.3856 22.6521 12.3856 20.5Z" fill="black"/>
+                  </svg>
+                  </a>
+              </div>
+              <div class="w-8 rounded-full mr-1">
+                  <svg width="30" height="30" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_220_2460)">
+                  <path d="M24.016 5.82541C20.929 7.1357 18.8995 10.016 18.7953 13.3079L18.7919 13.6188L18.3768 13.5795C14.2904 13.12 10.6927 10.9965 8.22243 7.54741C8.05516 7.31365 7.83161 7.12588 7.57248 7.00148C7.31335 6.87708 7.02702 6.82008 6.74001 6.83575C6.453 6.85142 6.17458 6.93926 5.93053 7.09113C5.68649 7.243 5.48471 7.454 5.34388 7.70458L5.17818 8.02233L5.09447 8.19145C3.86618 10.7283 3.06155 13.8119 3.35709 17.0799L3.40834 17.5463C3.8918 21.4122 5.97084 24.7469 9.86414 27.2479L10.1597 27.4307L10.0213 27.5042C7.77484 28.6368 5.71972 29.1305 3.48351 29.0417C1.67951 28.9733 1.01326 31.3855 2.59859 32.2499C8.74518 35.6 15.3445 36.6335 21.0349 34.9832C27.9708 32.9674 33.2529 27.769 35.2739 20.5769L35.4908 19.7312C35.8974 18.0349 36.1263 16.3043 36.1759 14.5652L36.181 13.9981L36.8524 12.6673L37.6041 11.1947L37.9696 10.4533L38.1712 10.0313C38.6239 9.06612 38.9502 8.26662 39.1518 7.58841L39.1757 7.49274L39.1894 7.46199C39.5652 6.44895 38.9058 5.14208 37.5818 5.14208L37.3734 5.15403C37.2385 5.17062 37.106 5.20332 36.9788 5.25141L36.8319 5.31633C36.3444 5.55308 35.8422 5.7585 35.3286 5.93133L34.7204 6.12778L34.2574 6.26445L32.9386 6.63003C30.6563 4.72012 27.5676 4.48778 24.3764 5.68362L24.016 5.82541Z" fill="black"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_220_2460">
+                  <rect width="41" height="41" fill="white"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+              </div>
+              <div class="w-5 rounded-full mr-2">
+                  <svg width="25" height="25" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.4643 0.500001C7.81524 0.4961 0 8.30744 0 17.9487C0 25.5728 4.88891 32.0536 11.6975 34.4337C12.6144 34.6639 12.4739 34.0123 12.4739 33.5675V30.5436C7.17925 31.164 6.96465 27.6602 6.60959 27.0749C5.89167 25.8498 4.1944 25.5376 4.70163 24.9524C5.90727 24.332 7.13633 25.1084 8.56048 27.2115C9.59054 28.7371 11.6 28.4796 12.6183 28.226C12.8407 27.309 13.3167 26.4897 13.9722 25.8537C8.48634 24.8704 6.19991 21.5227 6.19991 17.5429C6.19991 15.6115 6.8359 13.8362 8.08446 12.4043C7.2885 10.0437 8.15859 8.02261 8.27565 7.72217C10.5426 7.51928 12.8992 9.34531 13.0826 9.48967C14.3702 9.14242 15.8412 8.95903 17.4877 8.95903C19.1421 8.95903 20.6169 9.15022 21.9162 9.50138C22.3571 9.16583 24.5421 7.59732 26.6491 7.7885C26.7622 8.08894 27.6128 10.0632 26.8637 12.3926C28.1278 13.8284 28.7716 15.6193 28.7716 17.5546C28.7716 21.5422 26.4696 24.8938 20.9681 25.8615C21.4393 26.3249 21.8135 26.8776 22.0687 27.4872C22.3239 28.0968 22.4552 28.7512 22.4547 29.4121V33.8016C22.4859 34.1527 22.4547 34.5 23.0399 34.5C29.95 32.1706 34.9247 25.643 34.9247 17.9526C34.9247 8.30744 27.1056 0.500001 17.4643 0.500001Z" fill="black"/>
+                  </svg>
+              </div>
+          </div>
+    </div>
+
+    <!-- Interest -->
+    <div class="mb-4">
+      <p class="font-bold text-lg">Interest</p>
+      <div class="flex gap-2">
+                    <div class="border-4 border-[#EDEDED] text-[#2B546A] bg-[#EDEDED] inline-block rounded-full px-3 ">#css</div>
+                    <div class="border-4 border-[#EDEDED] text-[#2B546A] bg-[#EDEDED] inline-block rounded-full px-3 ">#html</div>
+                    <div class="border-4 border-[#EDEDED] text-[#2B546A] bg-[#EDEDED] inline-block rounded-full px-3 ">#reactJS</div>
+                    <div class="border-4 border-[#EDEDED] text-[#2B546A] bg-[#EDEDED] inline-block rounded-full px-3 ">#laravel</div>
+      </div>
+    </div>
+    <!-- Collections  -->
+    <div>
+      <div class ="grid grid-cols-2">
+        <p class="font-bold text-lg">Collections</p>
+        <p class="text-sm flex" style="justify-content: flex-end;">see all collections</p>
+      </div>
+
+      <div class="grid grid-cols-6">
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] bgImage rounded-md px-6 py-2 mr-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">CSS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left  text-[#2B546A] lowercase">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] rounded-md px-6 py-2 mr-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left  text-[#2B546A]">HTML</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost  btn-lg bg-[#E3EEFF] rounded-md px-6 py-2" style="width:190px">
+            <img src="./assets/bird.svg"></img>
+            <div class="mr-8">
+              <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+              <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
+            </div>
+        </button>
+        <button class="btn btn-ghost btn-lg bg-[#E3EEFF] rounded-md py-2 flex border justify-between" style="width:190px" >
                 <div class="">
-                    <button class="rounded-full p-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
-                        </svg>
-                    </button>
+                <img src="./assets/bird.svg" style="justify-content: flex-start;"></img>
                 </div>
-            </div>
-
-            <!-- FILTER -->
-
-
-            <div class="container flex justify-end items-center pt-6 px-2">
-                <div class="text-md pr-3">
-                    <p>Filter by: </p>
+                <div class="mr-8">
+                    <p class="font-bold text-xl ml-2 text-left text-[#2B546A]">JS</p>
+                    <p class="font-bold text-xs ml-2 mt-0 text-left lowercase text-[#2B546A]">3 articles</p>
                 </div>
-                <select class="select select-sm max-w-xs rounded-full bg-transparent hover:bg-gray-100">
-                    <option selected> none </option>
-                    <option>Beginner</option>
-                    <option>Intermediate</option>
-                    <option>Advanced</option>
-                </select>
-            </div>
+        </button>
+      </div>
+    
+
+    <!-- article and posts -->
+    <div class="tabs flex mt-6">
+      <a class="tab tab-bordered flex-1">Wynne's Articles</a> 
+      <a class="tab tab-bordered flex-1 tab-active">Wynne's Posts</a> 
+    </div>
+
+        <!-- COMMENT ITEM -->
+                <div class="bg-[#F1F7FF] mt-2 px-10 pt-8 pb-5 mb-3 rounded-xl">
+                    <!-- SENDER INFO -->
+                    <div>
+                        <div class="inline-flex items-center pb-3">
+                            <div class=" pr-1">
+                                <div class="avatar placeholder">
+                                    <div class="w-5 bg-success text-neutral-content rounded-full">
+                                        <span class="text-xs">w</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-sm">Wynne</p>
+                            <p class="text-sm text-gray-400 pl-3"><em> 30 days ago</em></p>
+                        </div>
+                    </div>
+
+                    <!-- COMMENT -->
+                    <div>
+                        <p>I suggest you to learn python if you are interested to learn machine learning</p>
+                    </div>
+
+                    <!-- TOPICS -->
+                    <div class="container">
+                        <div class="inline-flex flex-wrap">
+                            <div class="text-[#8A87C7] font-semibold text-sm hover:opacity-80 p-1">
+                                <p>#intermediate</p>
+                            </div>
+                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
+                                <p>#phyton</p>
+                            </div>
+                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
+                                <p>#machine-learning</p>
+                            </div>
+                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
+                                <p>#artificial_inteligence</p>
+                            </div>
+                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
+                                <p>#technology</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FEEDBACK -->
+                    <div class="container inline-flex pt-4">
+                        <div class="container flex-1 pr-10">
+                            <input type="text" placeholder="Reply" class="input input-sm w-full rounded-full" />
+                        </div>
+                        <div class="inline-flex items-center">
+                            <!-- THUMBS UP -->
+                            <label class="swap">
+                                <input type="checkbox" />
+                                <div class="swap-on">
+                                    <div class="pr-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-6 h-6">
+                                            <path
+                                                d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="swap-off">
+                                    <div class="pr-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </label>
+
+
+                            <!-- THUMBS DOWN -->
+                            <label class="swap">
+                                <input type="checkbox" />
+                                <div class="swap-on">
+                                    <div class="flex-1 pr-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                            class="w-6 h-6">
+                                            <path
+                                                d="M15.73 5.25h1.035A7.465 7.465 0 0118 9.375a7.465 7.465 0 01-1.235 4.125h-.148c-.806 0-1.534.446-2.031 1.08a9.04 9.04 0 01-2.861 2.4c-.723.384-1.35.956-1.653 1.715a4.498 4.498 0 00-.322 1.672V21a.75.75 0 01-.75.75 2.25 2.25 0 01-2.25-2.25c0-1.152.26-2.243.723-3.218C7.74 15.724 7.366 15 6.748 15H3.622c-1.026 0-1.945-.694-2.054-1.715A12.134 12.134 0 011.5 12c0-2.848.992-5.464 2.649-7.521.388-.482.987-.729 1.605-.729H9.77a4.5 4.5 0 011.423.23l3.114 1.04a4.5 4.5 0 001.423.23zM21.669 13.773c.536-1.362.831-2.845.831-4.398 0-1.22-.182-2.398-.52-3.507-.26-.85-1.084-1.368-1.973-1.368H19.1c-.445 0-.72.498-.523.898.591 1.2.924 2.55.924 3.977a8.959 8.959 0 01-1.302 4.666c-.245.403.028.959.5.959h1.053c.832 0 1.612-.453 1.918-1.227z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="swap-off">
+                                    <div class="flex-1 pr-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </label>
+
+                            <div class="hover:opacity-80">
+                                3 Comments
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             <!-- COMMENT LISTS -->
-            <div class="pt-3">
+            <div class="pt-3 pb-12">
                 <!-- COMMENT ITEM -->
                 <div class="bg-[#F1F7FF] px-10 pt-8 pb-5 mb-3 rounded-xl">
                     <!-- SENDER INFO -->
@@ -150,7 +356,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="text-sm">Wynee</p>
+                            <p class="text-sm">Wynne</p>
                             <p class="text-sm text-gray-400 pl-3"><em> 3 days ago</em></p>
                         </div>
                     </div>
@@ -244,214 +450,7 @@
                     </div>
                 </div>
 
-                <!-- COMMENT ITEM -->
-                <div class="bg-[#F1F7FF] px-10 pt-8 pb-5 mb-3 rounded-xl">
-                    <!-- SENDER INFO -->
-                    <div>
-                        <div class="inline-flex items-center pb-3">
-                            <div class=" pr-1">
-                                <div class="avatar placeholder">
-                                    <div class="w-5 bg-success text-neutral-content rounded-full">
-                                        <!-- <img class="bg-gray-100" src=""/> -->
-                                        <span class="text-xs">c</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-sm">Celline</p>
-                            <p class="text-sm text-gray-400 pl-3"><em> 30 days ago</em></p>
-                        </div>
-                    </div>
-
-                    <!-- COMMENT -->
-                    <div>
-                        <p>I suggest you to learn python if you are interested to learn machine learning</p>
-                    </div>
-
-                    <!-- TOPICS -->
-                    <div class="container">
-                        <div class="inline-flex flex-wrap">
-                            <div class="text-[#8A87C7] font-semibold text-sm hover:opacity-80 p-1">
-                                <p>#intermediate</p>
-                            </div>
-                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
-                                <p>#phyton</p>
-                            </div>
-                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
-                                <p>#machine-learning</p>
-                            </div>
-                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
-                                <p>#artificial_inteligence</p>
-                            </div>
-                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
-                                <p>#technology</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FEEDBACK -->
-                    <div class="container inline-flex pt-4">
-                        <div class="container flex-1 pr-10">
-                            <input type="text" placeholder="Reply" class="input input-sm w-full rounded-full" />
-                        </div>
-                        <div class="inline-flex items-center">
-                            <!-- THUMBS UP -->
-                            <label class="swap">
-                                <input type="checkbox" />
-                                <div class="swap-on">
-                                    <div class="pr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                            class="w-6 h-6">
-                                            <path
-                                                d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="swap-off">
-                                    <div class="pr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </label>
-
-
-                            <!-- THUMBS DOWN -->
-                            <label class="swap">
-                                <input type="checkbox" />
-                                <div class="swap-on">
-                                    <div class="flex-1 pr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                            class="w-6 h-6">
-                                            <path
-                                                d="M15.73 5.25h1.035A7.465 7.465 0 0118 9.375a7.465 7.465 0 01-1.235 4.125h-.148c-.806 0-1.534.446-2.031 1.08a9.04 9.04 0 01-2.861 2.4c-.723.384-1.35.956-1.653 1.715a4.498 4.498 0 00-.322 1.672V21a.75.75 0 01-.75.75 2.25 2.25 0 01-2.25-2.25c0-1.152.26-2.243.723-3.218C7.74 15.724 7.366 15 6.748 15H3.622c-1.026 0-1.945-.694-2.054-1.715A12.134 12.134 0 011.5 12c0-2.848.992-5.464 2.649-7.521.388-.482.987-.729 1.605-.729H9.77a4.5 4.5 0 011.423.23l3.114 1.04a4.5 4.5 0 001.423.23zM21.669 13.773c.536-1.362.831-2.845.831-4.398 0-1.22-.182-2.398-.52-3.507-.26-.85-1.084-1.368-1.973-1.368H19.1c-.445 0-.72.498-.523.898.591 1.2.924 2.55.924 3.977a8.959 8.959 0 01-1.302 4.666c-.245.403.028.959.5.959h1.053c.832 0 1.612-.453 1.918-1.227z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="swap-off">
-                                    <div class="flex-1 pr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </label>
-
-                            <div class="hover:opacity-80">
-                                3 Comments
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COMMENT ITEM -->
-                <div class="bg-[#F1F7FF] px-10 pt-8 pb-5 mb-3 rounded-xl">
-                    <!-- SENDER INFO -->
-                    <div>
-                        <div class="inline-flex items-center pb-3">
-                            <div class=" pr-1">
-                                <div class="avatar placeholder">
-                                    <div class="w-5 bg-error text-neutral-content rounded-full">
-                                        <!-- <img class="bg-gray-100" src=""/> -->
-                                        <span class="text-xs">p</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-sm">Patt</p>
-                            <p class="text-sm text-gray-400 pl-3"><em> 20 days ago</em></p>
-                        </div>
-                    </div>
-
-                    <!-- COMMENT -->
-                    <div>
-                        <p> SOLID is one of design pattern that you can implement in your project </p>
-                    </div>
-
-                    <!-- TOPICS -->
-                    <div class="container">
-                        <div class="inline-flex flex-wrap">
-                            <div class="text-[#FB6373] font-semibold text-sm hover:opacity-80 p-1">
-                                <p>#advanced</p>
-                            </div>
-                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
-                                <p>#SOLID_principle</p>
-                            </div>
-                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
-                                <p>#design_pattern</p>
-                            </div>
-                            <div class="text-gray-500 text-sm hover:opacity-80 p-1">
-                                <p>#structure</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FEEDBACK -->
-                    <div class="container inline-flex pt-4">
-                        <div class="container flex-1 pr-10">
-                            <input type="text" placeholder="Reply" class="input input-sm w-full rounded-full" />
-                        </div>
-                        <div class="inline-flex items-center">
-                            <!-- THUMBS UP -->
-                            <label class="swap">
-                                <input type="checkbox" />
-                                <div class="swap-on">
-                                    <div class="pr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                            class="w-6 h-6">
-                                            <path
-                                                d="M7.493 18.75c-.425 0-.82-.236-.975-.632A7.48 7.48 0 016 15.375c0-1.75.599-3.358 1.602-4.634.151-.192.373-.309.6-.397.473-.183.89-.514 1.212-.924a9.042 9.042 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75 2.25 2.25 0 012.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H14.23c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23h-.777zM2.331 10.977a11.969 11.969 0 00-.831 4.398 12 12 0 00.52 3.507c.26.85 1.084 1.368 1.973 1.368H4.9c.445 0 .72-.498.523-.898a8.963 8.963 0 01-.924-3.977c0-1.708.476-3.305 1.302-4.666.245-.403-.028-.959-.5-.959H4.25c-.832 0-1.612.453-1.918 1.227z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="swap-off">
-                                    <div class="pr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </label>
-
-
-                            <!-- THUMBS DOWN -->
-                            <label class="swap">
-                                <input type="checkbox" />
-                                <div class="swap-on">
-                                    <div class="flex-1 pr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                                            class="w-6 h-6">
-                                            <path
-                                                d="M15.73 5.25h1.035A7.465 7.465 0 0118 9.375a7.465 7.465 0 01-1.235 4.125h-.148c-.806 0-1.534.446-2.031 1.08a9.04 9.04 0 01-2.861 2.4c-.723.384-1.35.956-1.653 1.715a4.498 4.498 0 00-.322 1.672V21a.75.75 0 01-.75.75 2.25 2.25 0 01-2.25-2.25c0-1.152.26-2.243.723-3.218C7.74 15.724 7.366 15 6.748 15H3.622c-1.026 0-1.945-.694-2.054-1.715A12.134 12.134 0 011.5 12c0-2.848.992-5.464 2.649-7.521.388-.482.987-.729 1.605-.729H9.77a4.5 4.5 0 011.423.23l3.114 1.04a4.5 4.5 0 001.423.23zM21.669 13.773c.536-1.362.831-2.845.831-4.398 0-1.22-.182-2.398-.52-3.507-.26-.85-1.084-1.368-1.973-1.368H19.1c-.445 0-.72.498-.523.898.591 1.2.924 2.55.924 3.977a8.959 8.959 0 01-1.302 4.666c-.245.403.028.959.5.959h1.053c.832 0 1.612-.453 1.918-1.227z" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="swap-off">
-                                    <div class="flex-1 pr-2">
-                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                d="M7.5 15h2.25m8.024-9.75c.011.05.028.1.052.148.591 1.2.924 2.55.924 3.977a8.96 8.96 0 01-.999 4.125m.023-8.25c-.076-.365.183-.75.575-.75h.908c.889 0 1.713.518 1.972 1.368.339 1.11.521 2.287.521 3.507 0 1.553-.295 3.036-.831 4.398C20.613 14.547 19.833 15 19 15h-1.053c-.472 0-.745-.556-.5-.96a8.95 8.95 0 00.303-.54m.023-8.25H16.48a4.5 4.5 0 01-1.423-.23l-3.114-1.04a4.5 4.5 0 00-1.423-.23H6.504c-.618 0-1.217.247-1.605.729A11.95 11.95 0 002.25 12c0 .434.023.863.068 1.285C2.427 14.306 3.346 15 4.372 15h3.126c.618 0 .991.724.725 1.282A7.471 7.471 0 007.5 19.5a2.25 2.25 0 002.25 2.25.75.75 0 00.75-.75v-.633c0-.573.11-1.14.322-1.672.304-.76.93-1.33 1.653-1.715a9.04 9.04 0 002.86-2.4c.498-.634 1.226-1.08 2.032-1.08h.384" />
-                                        </svg>
-                                    </div>
-                                </div>
-                            </label>
-
-                            <div class="hover:opacity-80">
-                                3 Comments
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </div>
+</div>
 </body>
-
 </html>
