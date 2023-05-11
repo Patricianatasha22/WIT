@@ -1,0 +1,380 @@
+<!doctype html>
+<html data-theme="lofi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body style="font-family: Arial, Helvetica, sans-serif;">
+<!-- Navigation Bar -->
+<div class="border-b-2 border-b-500 border-[#E3EEFF]">
+    <div class="navbar bg-base-100">
+      <div class="flex-none">
+        <a href ="RHomePage.html">
+        <button class="btn btn-square btn-ghost" style="width: 100px ;">
+          <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
+        </button>
+        </a>
+      </div>
+      <div class="flex-1">
+        <a class="btn btn-ghost normal-case text-xl">Articles</a>
+        <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
+        <a class="btn btn-ghost normal-case text-xl" href = "RCommunityForumPage.html">Community Forum</a>
+      </div>
+      <table style="text-align: right; padding-right: 12px;">
+        <tr>
+          <td>
+            Patricia
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Level 20
+          </td>
+        </tr>
+      </table>
+      <div class="dropdown dropdown-end">
+        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+          <div class="avatar placeholder">
+            <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+              <span class="text-2xl">P</span>
+            </div>
+          </div>
+        </label>
+        
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+          <li style="text-align: center ;">
+            <table class = "table-fixed">
+              <tr>
+                
+                <td class = "bg-[#2B546A]">
+                  <a href="RHomePage.html">
+                    <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
+                      Reader
+                    </div>
+                  </a>
+                </td>
+              
+                <td class = "bg-[#E3EEFF]">
+                  <a href="../Writer/WHomePage.html">
+                  <div class="text-[#2B546A] inline-block rounded-box px-3">
+                    Writer 
+                  </div>
+                </a>
+                </td>
+              </a>
+              </tr>
+            </table>
+          </li>
+          <li><a>Dashboard</a></li>
+          <li><a>Collections</a></li>
+          <li><a>Settings</a></li>
+          <li><a>Help</a></li>
+          <li><a href = "https://progate.com/signin">Logout</a></li>
+        </ul>
+      </div>
+      <div class="flex-none">
+
+        <button class="btn btn-square btn-ghost">
+          <img src="./assets/Bell.png" style="width: 20px;"></img>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content -->
+<div class="md:container md:mx-auto mt-3 px-20">
+        <div class="tabs flex mt-6">
+            <a class="tab tab-bordered flex-1">Reader</a> 
+            <a class="tab tab-bordered flex-1 tab-active">Writer</a> 
+        </div>
+
+    <div class="flex justify-center">
+    <p class="text-xl font-bold mt-5 mb-1">Top</p>
+        <div class="dropdown dropdown-right dropdown-end">
+             <select class=" mt-4 ml-2 select select-sm max-w-xs rounded-full bg-[#E3EEFF] hover:bg-gray-100"
+                  id="darkTextColor">
+                  <option>Followers</option>
+                  <option selected>Likes</option>
+                  <option>Articles</option>
+              </select>
+        </div>
+    </div>
+
+<div class="overflow-x-auto w-full">
+  <table class="table w-full">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>
+          <label>
+            Rank
+          </label>
+        </th>
+        <th>Reader name</th>
+        <th>Country</th>
+        <th>Likes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- row 1 -->
+      <tr>
+        <th>
+          <label>
+            1
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Hart Hagerty</div>
+              <div class="text-sm opacity-50">Beginner</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          United States
+        </td>
+        <td>900</td>
+        
+      </tr>
+      <!-- row 2 -->
+      <tr>
+        <th>
+          <label>
+            2
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Brice Swyre</div>
+              <div class="text-sm opacity-50">Intermediate</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Russia
+        </td>
+        <td>600</td>
+        
+      </tr>
+      <!-- row 3 -->
+      <tr>
+        <th>
+          <label>
+            3
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Marjy Ferencz</div>
+              <div class="text-sm opacity-50">Advanced</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Brazil
+        </td>
+        <td>500</td>
+        
+      </tr>
+      <!-- row 4 -->
+      <tr>
+        <th>
+          <label>
+           4
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Yancy Tear</div>
+              <div class="text-sm opacity-50">Beginner</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Indonesia
+        </td>
+        <td>300</td>
+      </tr>
+      <!-- row 5 -->
+      <tr>
+        <th>
+          <label>
+           5
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Jean chou</div>
+              <div class="text-sm opacity-50">Beginner</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Indonesia
+        </td>
+        <td>200</td>
+        </tr>
+              <tr>
+        <th>
+          <label>
+           6
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Feb Chou</div>
+              <div class="text-sm opacity-50">Beginner</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Indonesia
+        </td>
+        <td>100</td>
+        </tr>
+              <tr>
+        <th>
+          <label>
+           7
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">March Chou</div>
+              <div class="text-sm opacity-50">Beginner</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Indonesia
+        </td>
+        <td>80</td>
+        </tr>
+              <tr>
+        <th>
+          <label>
+           6
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Monday Chou</div>
+              <div class="text-sm opacity-50">Beginner</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Indonesia
+        </td>
+        <td>60</td>
+        </tr>
+              <tr>
+        <th>
+          <label>
+           8
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Tuesday Chou</div>
+              <div class="text-sm opacity-50">Beginner</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Indonesia
+        </td>
+        <td>30</td>
+        </tr>
+              <tr>
+        <th>
+          <label>
+           9
+          </label>
+        </th>
+        <td>
+          <div class="flex items-center space-x-3">
+            <div class="avatar">
+              <div class="mask mask-squircle w-12 h-12">
+                <img src="./assets/girl.jpg" alt="Avatar Tailwind CSS Component" />
+              </div>
+            </div>
+            <div>
+              <div class="font-bold">Yancy Tear</div>
+              <div class="text-sm opacity-50">Beginner</div>
+            </div>
+          </div>
+        </td>
+        <td>
+          Indonesia
+        </td>
+        <td>10</td>
+        </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+</body>
+
+</html>

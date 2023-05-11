@@ -98,14 +98,12 @@
     <div class="flex justify-center">
     <p class="text-xl font-bold mt-5 mb-1">Top</p>
         <div class="dropdown dropdown-right dropdown-end">
-            <svg width="46" height="33" viewBox="0 0 46 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22.9996 20.625L14.8672 14.7923L17.5793 12.848L22.9996 16.7365L28.4199 12.848L31.132 14.7923L22.9996 20.6264V20.625Z" fill="black"/>
-            </svg>
-
-            <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a>Item 1</a></li>
-                <li><a>Item 2</a></li>
-            </ul>
+             <select class=" mt-4 ml-2 select select-sm max-w-xs rounded-full bg-[#E3EEFF] hover:bg-gray-100"
+                  id="darkTextColor">
+                  <option selected>Followers</option>
+                  <a href="RWLikesLeaderboard.html"><option>Likes</option></a>
+                  <option>Articles</option>
+              </select>
         </div>
     </div>
 
@@ -121,7 +119,7 @@
         </th>
         <th>Reader name</th>
         <th>Country</th>
-        <th>Accumulated XP</th>
+        <th>Followers</th>
       </tr>
     </thead>
     <tbody>
