@@ -1,0 +1,176 @@
+<!doctype html>
+<html data-theme="lofi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.6/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #darkTextColor {
+            color: #2B546A
+        }
+    </style>
+
+</head>
+<!-- <body class = "font-sans ..."> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+<body style="font-family: Arial, Helvetica, sans-serif;;">
+    <!-- Navigation Bar -->
+    <div class="border-b-2 border-b-500 border-[#E3EEFF]">
+        <div class="navbar bg-base-100">
+            <div class="flex-none">
+                <a href="WHomePage.html">
+                    <button class="btn btn-square btn-ghost" style="width: 100px ;">
+                        <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
+                    </button>
+                </a>
+            </div>
+            <div class="flex-1">
+                <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
+                <a class="btn btn-ghost normal-case text-xl">Help</a>
+            </div>
+            <table style="text-align: right; padding-right: 12px;">
+                <tr>
+                    <td>
+                        Patricia
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Level 20
+                    </td>
+                </tr>
+            </table>
+            <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                    <div class="avatar placeholder">
+                        <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+                            <span class="text-2xl">P</span>
+                        </div>
+                    </div>
+                </label>
+
+                <ul tabindex="0"
+                    class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+                    <li style="text-align: center ;">
+                        <table class="table-fixed">
+                            <tr>
+
+                                <td class="bg-[#E3EEFF]">
+                                    <a href="../Reader/RHomePage.html">
+                                        <div class=" text-[#2B546A]  inline-block rounded-box px-3">
+                                            Reader
+                                        </div>
+                                    </a>
+                                </td>
+
+                                <td class="bg-[#2B546A]">
+                                    <a href="WHomePage.html">
+                                        <div class="text-[#F9FBFE] inline-block rounded-box px-3">
+                                            Writer
+                                        </div>
+                                    </a>
+                                </td>
+                                </a>
+                            </tr>
+                        </table>
+                    </li>
+                    <li><a>Dashboard</a></li>
+                    <li><a>Settings</a></li>
+                    <li><a href="WWithdrawRevenue.html">My Revenue</a></li>
+                    <li><a href="https://progate.com/signin">Logout</a></li>
+                </ul>
+            </div>
+            <div class="flex-none">
+
+                <button class="btn btn-square btn-ghost">
+                    <img src="./assets/Bell.png" style="width: 20px;"></img>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="container mx-auto text-[#2B546A]">
+        <!-- TITLE -->
+        <div class="container mt-12 mb-5 flex justify-center">
+
+        </div>
+    </div>
+
+    <div class="md:container md:mx-auto mt-3" style="color:#2B546A">
+
+        <div class="container mx-auto mt-6 flex items-center" style="background-color: #FFFFFF;">
+
+            <div class="container bg-[#F1F7FF] px-10 pb-5 mb-3 rounded-xl">
+                <div class="container mt-5 mb-5 flex justify-center">
+                    <p class="capitalize font-semibold text-3xl" id="darkTextColor">My Revenue</p>
+                </div>
+                Choose the date:
+                <input type="text" id="datepicker" class="bg-[#E3EEFF] ml-2"
+                    style="border-radius:10px; text-align: center">
+                <div>
+                    <div class="flex-1 ml-10 mt-3 border-[#E3EEFF] border-b-2">
+                        <div class="flex justify-between items-center"
+                            style="text-align:center;  display: flex; justify-content: center; align-items: center;">
+                        </div>
+                        <h2 id="darkTextColor" class="text-l mb-3 mr-10 font-bold">Views: 23</h2>
+
+                    </div>
+                    <div class="flex-1 ml-10 mt-3 border-[#E3EEFF] border-b-2">
+                        <div class="flex justify-between items-center"
+                            style="text-align:center;  display: flex; justify-content: center; align-items: center;">
+                        </div>
+                        <h2 id="darkTextColor" class="text-l mb-3 mr-10 font-bold">Likes: 10</h2>
+
+                    </div>
+                    <div class="flex-1 ml-10 mt-3 border-[#E3EEFF] border-b-2">
+                        <div class="flex justify-between items-center"
+                            style="text-align:center;  display: flex; justify-content: center; align-items: center;">
+                        </div>
+                        <h2 id="darkTextColor" class="text-l mb-3 mr-10 font-bold">Articles: 4</h2>
+
+                    </div>
+                    <div class="flex-1 ml-10 mt-3 border-[#E3EEFF] border-b-2">
+                        <div class="flex justify-between items-center"
+                            style="text-align:center;  display: flex; justify-content: center; align-items: center;">
+                        </div>
+                        <h2 id="darkTextColor" class="text-l mb-3 mr-10 font-bold">Followers: 48</h2>
+
+                    </div>
+                </div>
+
+
+                <div class="container mt-5 mb-5">
+                    <h2 id="darkTextColor" class="text-2xl mb-3 mr-10 font-bold">Total</h2>
+                    <h2 id="darkTextColor" class="text-5xl mb-5 mr-10 ml-5">Rp.200.000</h2>
+                    <a href="#">
+                        <div class="border-4 border-[#E3EEFF] font-bold text-[#2B546A] bg-[#E3EEFF] inline-block rounded-full px-3">
+                          Withdraw Revenue
+                        </div>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        $(function () {
+            $('#datepicker').datepicker({
+                dateFormat: 'MM, dd yy'
+            }).datepicker('setDate', new Date());
+        });
+    </script>
+
+</body>
+
+</html>

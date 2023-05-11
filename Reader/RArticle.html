@@ -22,45 +22,84 @@
 
 </head>
 <body  style="font-family: Arial, Helvetica, sans-serif;">
-    <!-- NAV BAR -->
+   <!-- Navigation Bar -->
+  <div class="border-b-2 border-b-500 border-[#E3EEFF]">
     <div class="navbar bg-base-100">
-        <div class="flex-none">
+      <div class="flex-none">
+        <a href ="RHomePage.html">
         <button class="btn btn-square btn-ghost" style="width: 100px ;">
-            <img src="./assets/Progate Logo Coloured.png" style="width:80px ;"></img>
+          <img src="./assets/Progate Logo Coloured.png" style="width:90px ;"></img>
         </button>
-        </div>
-        <div class="flex-1">
+        </a>
+      </div>
+      <div class="flex-1">
         <a class="btn btn-ghost normal-case text-xl">Articles</a>
         <a class="btn btn-ghost normal-case text-xl">Leaderboard</a>
-        <a class="btn btn-ghost normal-case text-xl">Community Forum</a>
-        </div>
-        <h3>Patricia</h3>
-        <h3>Level 20</h3>
-        <div class="dropdown dropdown-end">
+        <a class="btn btn-ghost normal-case text-xl" href = "RCommunityForumPage.html">Community Forum</a>
+      </div>
+      <table style="text-align: right; padding-right: 12px;">
+        <tr>
+          <td>
+            Patricia
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Level 20
+          </td>
+        </tr>
+      </table>
+      <div class="dropdown dropdown-end">
         <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-            <div class="w-6 rounded-full">
-            <img src="./assets/Profile Pic.png" /></img>
+          <div class="avatar placeholder">
+            <div class="bg-neutral-focus text-neutral-content rounded-full w-8">
+              <span class="text-2xl">P</span>
             </div>
+          </div>
         </label>
-        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li>
-            <a class="justify-between">
-                Dashboard
-            </a>
-            </li>
-            <li><a>Collections</a></li>
-            <li><a>Settings</a></li>
-            <li><a>Help</a></li>
-            <li><a>Logout</a></li>
-        </ul>
-        </div>
-        <div class="flex-none">
         
+        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-[#F1F7FF] rounded-box w-48">
+          <li style="text-align: center ;">
+            <table class = "table-fixed">
+              <tr>
+                
+                <td class = "bg-[#2B546A]">
+                  <a href="RHomePage.html">
+                    <div class=" text-[#F9FBFE]  inline-block rounded-box px-3">
+                      Reader
+                    </div>
+                  </a>
+                </td>
+              
+                <td class = "bg-[#E3EEFF]">
+                  <a href="../Writer/WHomePage.html">
+                  <div class="text-[#2B546A] inline-block rounded-box px-3">
+                    Writer 
+                  </div>
+                </a>
+                </td>
+              </a>
+              </tr>
+            </table>
+          </li>
+          <li><a>Dashboard</a></li>
+          <li><a>Collections</a></li>
+          <li><a>Settings</a></li>
+          <li><a>Help</a></li>
+          <li><a href = "https://progate.com/signin">Logout</a></li>
+        </ul>
+      </div>
+      <div class="flex-none">
+
         <button class="btn btn-square btn-ghost">
-            <img src="./assets/Bell.png" style="width: 20px;"></img>
+          <img src="./assets/Bell.png" style="width: 20px;"></img>
         </button>
-        </div>
+      </div>
     </div>
+
+  </div>
+
+  <!-- Navigation Bar -->
 
     <!-- content -->
     <div class="md:container md:mx-auto mt-3 px-20">
@@ -505,20 +544,204 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-</div>
-<!-- Feedback -->
-<input type="checkbox" id="my-modal" class="modal-toggle" />
-<div class="modal">
-    <div class="modal-box">
-        <h3 class="font-bold text-lg">Congratulations random Internet user!</h3>
-        <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
-        <div class="modal-action">
-        <label for="my-modal" class="btn">Yay!</label>
-        </div>
     </div>
 </div>
 
+
+<!-- daily challenge -->
+<input type="checkbox" id="my-modal" class="modal-toggle" />
+<div class="modal">
+    <div class="modal-box w-2/5">
+        <!-- Daily Challenge content -->
+        <div class="Grid grid-cols-2 flex items-center justify-center">
+            <div class="col-span-1">
+                <svg class="w-10 h-12 mr-2" fill="#F7CC53" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"></path>
+                </svg>
+            </div>
+            <div class="cols-span-1">
+                <h3 class="font-bold text-lg text-center">7 days streak</h3>
+                <p class="text-sm text-center">100 XP!</p>
+            </div>
+        </div>
+
+        <div class="Grid grid-cols-7 flex gap-5 ml-1 mt-3 items-center justify-center">
+            <p class="text-xs font-bold">T</p>
+            <p class="text-xs font-bold">W</p>
+            <p class="text-xs font-bold">T</p>
+            <p class="text-xs font-bold">F</p>
+            <p class="text-xs font-bold">S</p>
+            <p class="text-xs font-bold">S</p>
+            <p class="text-xs font-bold">M</p>
+        </div>
+        <div class="Grid grid-cols-7 flex gap-2 items-center justify-center">
+                <div class="w-5 border bg-[#F7CC53] rounded-full p-1">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                    </svg>
+                </div>
+                <div class="w-5 border bg-[#F7CC53] rounded-full p-1">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                    </svg>
+                </div>
+                <div class="w-5 border bg-[#F7CC53] rounded-full p-1">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                    </svg>
+                </div>
+                <div class="w-5 border bg-[#F7CC53] rounded-full p-1">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                    </svg>
+                </div>
+                <div class="w-5 border bg-[#F7CC53] rounded-full p-1">
+                    <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                    </svg>
+                </div>
+                <div class="w-5 border bg-[#F7CC53] rounded-full p-1">
+                    <svg fill="none" stroke="none" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                    </svg>
+                </div>
+                <div class="w-5 border bg-[#F7CC53] rounded-full p-1">
+                    <svg fill="none" stroke="none" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path>
+                    </svg>
+                </div>
+        </div>
+
+        <!-- feedback -->
+            <h3 class="font-bold text-lg text-center mt-8">How's the article?</h3>
+            <p class="text-xs text-center mb-3">Tell us what you think, choose now!</p>
+
+            <!-- emo -->
+             <div class="Grid grid-cols-3 flex justify-center items-center gap-2">
+                 <!--sad-->
+                <label class="swap">
+                        <input type="checkbox" />
+                        <div class="swap-on">
+                            <div class="flex-1 pr-2">
+                                <svg class="w-14 h-14" viewBox="0 0 91 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M87.374 45.9451C87.374 69.1381 68.762 87.882 45.874 87.882C22.986 87.882 4.37402 69.1381 4.37402 45.9451C4.37402 22.752 22.986 4.00818 45.874 4.00818C68.762 4.00818 87.374 22.752 87.374 45.9451Z" fill="#F7CC53" stroke="black" stroke-width="7"/>
+                                <path d="M56.6613 38.0932C59.4504 38.0932 61.7113 35.877 61.7113 33.1432C61.7113 30.4094 59.4504 28.1932 56.6613 28.1932C53.8723 28.1932 51.6113 30.4094 51.6113 33.1432C51.6113 35.877 53.8723 38.0932 56.6613 38.0932Z" fill="black"/>
+                                <path d="M36.05 37.9C38.839 37.9 41.1 35.6838 41.1 32.95C41.1 30.2162 38.839 28 36.05 28C33.261 28 31 30.2162 31 32.95C31 35.6838 33.261 37.9 36.05 37.9Z" fill="black"/>
+                                <path d="M46.0846 50.5446C42.0597 50.5452 38.0933 51.489 34.516 53.2973C30.9388 55.1055 27.8544 57.7257 25.5199 60.9396C25.0883 61.534 24.9154 62.2721 25.039 62.9915C25.1626 63.711 25.5728 64.3528 26.1792 64.7758C26.7856 65.1988 27.5387 65.3684 28.2726 65.2472C29.0066 65.126 29.6614 64.724 30.093 64.1296C31.8868 61.6598 34.2505 59.6403 36.9914 58.2355C39.7323 56.8307 42.7729 56.0803 45.8657 56.0455C48.9585 56.0106 52.0159 56.6923 54.789 58.035C57.5621 59.3777 59.9725 61.3434 61.8238 63.7721C62.2702 64.3555 62.9349 64.7413 63.6715 64.8444C64.4081 64.9476 65.1563 64.7597 65.7516 64.3221C66.3468 63.8844 66.7404 63.233 66.8456 62.511C66.9508 61.7889 66.7591 61.0555 66.3127 60.4721C63.9608 57.3894 60.9078 54.887 57.3963 53.1636C53.8849 51.4403 50.0117 50.5435 46.0846 50.5446Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swap-off">
+                            <div class="flex-1 pr-2">
+                                  <!-- sad -->
+                                    <svg class="w-14 h-14" viewBox="0 0 90 89" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.8889 0.945068C36.0107 0.945068 27.3319 3.52562 19.95 8.3604C12.568 13.1952 6.81452 20.067 3.41698 28.107C0.0194495 36.1469 -0.8695 44.9939 0.862548 53.529C2.5946 62.0642 6.86985 69.9042 13.1477 76.0577C19.4255 82.2113 27.4239 86.4019 36.1315 88.0996C44.8391 89.7974 53.8648 88.926 62.0671 85.5957C70.2695 82.2655 77.2802 76.6259 82.2127 69.3901C87.1451 62.1544 89.7778 53.6474 89.7778 44.9451C89.7778 33.2755 85.0485 22.084 76.6302 13.8324C68.2119 5.58077 56.7942 0.945068 44.8889 0.945068ZM44.8889 83.445C37.1205 83.445 29.5265 81.1871 23.0673 76.9566C16.6081 72.7262 11.5738 66.7133 8.60097 59.6784C5.62813 52.6434 4.8503 44.9023 6.36584 37.4341C7.88138 29.9658 11.6222 23.1058 17.1153 17.7215C22.6084 12.3371 29.6071 8.67036 37.2262 7.18483C44.8453 5.6993 52.7428 6.46173 59.9199 9.3757C67.0969 12.2897 73.2313 17.2243 77.5472 23.5556C81.8631 29.8869 84.1667 37.3305 84.1667 44.9451C84.1667 55.1559 80.0285 64.9485 72.6625 72.1687C65.2965 79.3888 55.306 83.445 44.8889 83.445Z" fill="black"/>
+                                    <path d="M56.05 39.8451C58.839 39.8451 61.1 37.6289 61.1 34.8951C61.1 32.1613 58.839 29.9451 56.05 29.9451C53.261 29.9451 51 32.1613 51 34.8951C51 37.6289 53.261 39.8451 56.05 39.8451Z" fill="black"/>
+                                    <path d="M35.4387 39.6518C38.2277 39.6518 40.4887 37.4356 40.4887 34.7018C40.4887 31.968 38.2277 29.7518 35.4387 29.7518C32.6496 29.7518 30.3887 31.968 30.3887 34.7018C30.3887 37.4356 32.6496 39.6518 35.4387 39.6518Z" fill="black"/>
+                                    <path d="M45.4733 52.2964C41.4484 52.2971 37.482 53.2409 33.9047 55.0491C30.3275 56.8573 27.243 59.4776 24.9086 62.6914C24.477 63.2858 24.304 64.0239 24.4277 64.7434C24.5513 65.4628 24.9615 66.1046 25.5679 66.5276C26.1743 66.9507 26.9273 67.1202 27.6613 66.999C28.3953 66.8778 29.0501 66.4758 29.4816 65.8814C31.2755 63.4116 33.6391 61.3921 36.38 59.9873C39.1209 58.5825 42.1616 57.8321 45.2544 57.7973C48.3471 57.7624 51.4046 58.4441 54.1777 59.7868C56.9508 61.1295 59.3612 63.0952 61.2125 65.5239C61.6589 66.1074 62.3236 66.4931 63.0602 66.5962C63.7968 66.6994 64.545 66.5115 65.1403 66.0739C65.7355 65.6363 66.129 64.9848 66.2343 64.2628C66.3395 63.5408 66.1478 62.8074 65.7014 62.2239C63.3495 59.1413 60.2965 56.6388 56.785 54.9155C53.2735 53.1921 49.4004 52.2953 45.4733 52.2964Z" fill="black"/>
+                                    </svg>
+                            </div>
+                        </div>
+                </label>
+                <!-- ok lah -->
+                <label class="swap">
+                        <input type="checkbox" />
+                        <div class="swap-on">
+                            <div class="flex-1 pr-2">
+                                <svg class="w-14 h-14" viewBox="0 0 91 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M87.374 45.9451C87.374 69.1381 68.762 87.882 45.874 87.882C22.986 87.882 4.37402 69.1381 4.37402 45.9451C4.37402 22.752 22.986 4.00818 45.874 4.00818C68.762 4.00818 87.374 22.752 87.374 45.9451Z" fill="#F7CC53" stroke="black" stroke-width="7"/>
+                                <path d="M41.3648 50.4014C43.8018 50.4014 45.7774 48.4258 45.7774 45.9888C45.7774 43.5518 43.8018 41.5762 41.3648 41.5762C38.9277 41.5762 36.9521 43.5518 36.9521 45.9888C36.9521 48.4258 38.9277 50.4014 41.3648 50.4014Z" fill="black"/>
+                                <path d="M66.7036 50.4014C69.1407 50.4014 71.1163 48.4258 71.1163 45.9888C71.1163 43.5518 69.1407 41.5762 66.7036 41.5762C64.2666 41.5762 62.291 43.5518 62.291 45.9888C62.291 48.4258 64.2666 50.4014 66.7036 50.4014Z" fill="black"/>
+                                <line x1="36.9521" y1="62.6683" x2="67.5347" y2="62.6683" stroke="black" stroke-width="5"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="swap-off">
+                            <div class="flex-1 pr-2">
+                                <svg class="w-14 h-14" viewBox="0 0 91 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M87.2773 45.9451C87.2773 69.1381 68.6654 87.882 45.7773 87.882C22.8893 87.882 4.27734 69.1381 4.27734 45.9451C4.27734 22.752 22.8893 4.00818 45.7773 4.00818C68.6654 4.00818 87.2773 22.752 87.2773 45.9451Z" stroke="black" stroke-width="7"/>
+                                <path d="M41.2681 50.4014C43.7051 50.4014 45.6807 48.4258 45.6807 45.9888C45.6807 43.5518 43.7051 41.5762 41.2681 41.5762C38.8311 41.5762 36.8555 43.5518 36.8555 45.9888C36.8555 48.4258 38.8311 50.4014 41.2681 50.4014Z" fill="black"/>
+                                <path d="M66.6079 50.4014C69.045 50.4014 71.0206 48.4258 71.0206 45.9888C71.0206 43.5518 69.045 41.5762 66.6079 41.5762C64.1709 41.5762 62.1953 43.5518 62.1953 45.9888C62.1953 48.4258 64.1709 50.4014 66.6079 50.4014Z" fill="black"/>
+                                <line x1="36.8555" y1="62.6683" x2="67.438" y2="62.6683" stroke="black" stroke-width="5"/>
+                                </svg>
+                            </div>
+                        </div>
+                </label>
+                <!-- happy -->
+                <label class="swap">
+                        <input type="checkbox" />
+                        <div class="swap-on">
+                            <div class="flex-1 pr-2">
+                               <svg class="w-16 h-16" viewBox="0 0 104 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_220_3948)">
+                                <path d="M87.5 53.4369C87.5 76.63 68.888 95.3738 46 95.3738C23.112 95.3738 4.5 76.63 4.5 53.4369C4.5 30.2438 23.112 11.5 46 11.5C68.888 11.5 87.5 30.2438 87.5 53.4369Z" fill="#F7CC53" stroke="black" stroke-width="7"/>
+                                <path d="M38.4263 42.803C41.5866 42.803 44.1485 40.1692 44.1485 36.9203C44.1485 33.6713 41.5866 31.0375 38.4263 31.0375C35.266 31.0375 32.7041 33.6713 32.7041 36.9203C32.7041 40.1692 35.266 42.803 38.4263 42.803Z" fill="black"/>
+                                <path d="M55.5933 42.803C58.7536 42.803 61.3155 40.1692 61.3155 36.9203C61.3155 33.6713 58.7536 31.0375 55.5933 31.0375C52.433 31.0375 49.8711 33.6713 49.8711 36.9203C49.8711 40.1692 52.433 42.803 55.5933 42.803Z" fill="black"/>
+                                <path d="M47.374 82.0001C50.3723 82.0105 53.2946 79.4991 55.7204 74.8271C58.1463 70.1551 59.9507 63.5633 60.874 56.0001H33.874C34.7974 63.5633 36.6018 70.1551 39.0276 74.8271C41.4535 79.4991 44.3757 82.0105 47.374 82.0001Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_220_3948">
+                                <rect width="103" height="105.89" fill="white" transform="translate(0.874023)"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="swap-off">
+                            <div class="flex-1 pr-2">
+                                    <svg class="w-16 h-16" viewBox="0 0 104 106" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_220_3948)">
+                                    <path d="M46.5551 6.4176C37.5012 6.4176 28.6505 9.17776 21.1224 14.349C13.5943 19.5203 7.7268 26.8704 4.26199 35.4699C0.797178 44.0694 -0.109374 53.5321 1.65697 62.6613C3.42332 71.7904 7.78323 80.1761 14.1854 86.7579C20.5875 93.3397 28.7443 97.8219 37.6243 99.6379C46.5044 101.454 55.7087 100.522 64.0735 96.9597C72.4383 93.3977 79.5878 87.3656 84.618 79.6263C89.6481 71.8869 92.3329 62.7879 92.3329 53.4799C92.3329 40.9982 87.5099 29.0277 78.9249 20.2018C70.3399 11.3759 58.6962 6.4176 46.5551 6.4176ZM46.5551 94.6594C38.6329 94.6594 30.8886 92.2442 24.3015 87.7194C17.7144 83.1945 12.5803 76.7631 9.54863 69.2386C6.51692 61.714 5.72369 53.4342 7.26924 45.4462C8.8148 37.4581 12.6297 30.1206 18.2316 24.3616C23.8335 18.6025 30.9707 14.6806 38.7407 13.0916C46.5107 11.5027 54.5645 12.3182 61.8837 15.435C69.2029 18.5518 75.4588 23.8298 79.8601 30.6018C84.2615 37.3737 86.6107 45.3353 86.6107 53.4799C86.6107 64.4013 82.3906 74.8755 74.8787 82.5982C67.3668 90.3208 57.1785 94.6594 46.5551 94.6594Z" fill="black"/>
+                                    <path d="M38.3296 49.8029C41.4899 49.8029 44.0519 47.1691 44.0519 43.9201C44.0519 40.6712 41.4899 38.0374 38.3296 38.0374C35.1693 38.0374 32.6074 40.6712 32.6074 43.9201C32.6074 47.1691 35.1693 49.8029 38.3296 49.8029Z" fill="black"/>
+                                    <path d="M55.4957 49.8029C58.656 49.8029 61.2179 47.1691 61.2179 43.9201C61.2179 40.6712 58.656 38.0374 55.4957 38.0374C52.3354 38.0374 49.7734 40.6712 49.7734 43.9201C49.7734 47.1691 52.3354 49.8029 55.4957 49.8029Z" fill="black"/>
+                                    <path d="M47.2773 89.0001C50.2756 89.0105 53.1979 86.4991 55.6238 81.8271C58.0496 77.1551 59.854 70.5633 60.7773 63.0001H33.7773C34.7007 70.5633 36.5051 77.1551 38.9309 81.8271C41.3568 86.4991 44.279 89.0105 47.2773 89.0001Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_220_3948">
+                                    <rect width="103" height="105.89" fill="white" transform="translate(0.777344)"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                            </div>
+                        </div>
+                </label>
+
+                
+               
+            </div>
+            
+            <!-- Don't show this again -->
+            <div class="Grid grid-cols-2 flex items-center justify-center">
+                <label class="swap">
+                        <input type="checkbox" />
+                        <div class="swap-on">
+                            
+                            <div class="flex-1 pr-2">
+                                <svg class="w-5 h-5 mt-2"fill="#F7CC53" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="swap-off">
+                            <div class="flex-1 pr-2">
+                                    <svg class="w-5 h-5 mt-2"fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                </label>
+                <p class="text-s mt-2">Don't show this again</p>
+            </div>
+
+
+        <div class="modal-action">
+            <label for="my-modal" class="btn">Yay!</label>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>
