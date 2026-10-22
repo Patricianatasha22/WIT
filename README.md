@@ -59,13 +59,10 @@ Ini adalah **prototipe front-end**. Data seperti artikel, XP, peringkat, dan gra
 
 Proyek ini dikerjakan bersama seorang rekan tim.
 
-Bagian yang saya kerjakan: **[isi sesuai kontribusi Anda, misalnya: halaman dashboard Reader, termasuk grafik aktivitas, grafik topik, dan kartu misi beserta pop-up klaim hadiah]**.
-
-## Pengembangan selanjutnya
-
-- Menghubungkan aplikasi ke *backend* dan basis data agar data pengguna tersimpan.
-- Menambahkan sistem login dan autentikasi.
-- Membuat grafik dan misi menggunakan data aktivitas yang sebenarnya.
+Peran saya:
+Pengembangan (coding): mengimplementasikan halaman-halaman situs menggunakan HTML, CSS, dan JavaScript, termasuk halaman dashboard Reader dengan grafik aktivitas, grafik topik, dan kartu misi beserta pop-up klaim hadiah.
+Pemenuhan kriteria: memastikan hasil akhir sesuai dengan kriteria penilaian dari panitia.
+Ketepatan waktu: memastikan proyek selesai sebelum tenggat kompetisi.
 
 ## Penulis
 
