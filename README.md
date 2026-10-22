@@ -61,7 +61,9 @@ Proyek ini dikerjakan bersama dua orang rekan tim.
 
 Peran saya:
 Pengembangan (coding): mengimplementasikan halaman-halaman situs menggunakan HTML, CSS, dan JavaScript, termasuk halaman dashboard Reader dengan grafik aktivitas, grafik topik, dan kartu misi beserta pop-up klaim hadiah.
+
 Pemenuhan kriteria: memastikan hasil akhir sesuai dengan kriteria penilaian dari panitia.
+
 Ketepatan waktu: memastikan proyek selesai sebelum tenggat kompetisi.
 
 ## Penulis
