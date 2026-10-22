@@ -57,7 +57,7 @@ Ini adalah **prototipe front-end**. Data seperti artikel, XP, peringkat, dan gra
 
 ## Kontribusi saya
 
-Proyek ini dikerjakan bersama seorang rekan tim.
+Proyek ini dikerjakan bersama dua orang rekan tim.
 
 Peran saya:
 Pengembangan (coding): mengimplementasikan halaman-halaman situs menggunakan HTML, CSS, dan JavaScript, termasuk halaman dashboard Reader dengan grafik aktivitas, grafik topik, dan kartu misi beserta pop-up klaim hadiah.
